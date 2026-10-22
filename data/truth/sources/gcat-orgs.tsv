@@ -1,0 +1,83 @@
+#Code	UCode	StateCode	Type	Class	ShortName	Name	Parent	EName
+# Updated 2026 Oct 17 1831:24
+F	F	F	CY	C	France	Republique Francaise	-	French Republic
+I	I	I	CY	C	Italia	Repubblica Italiana	-	Italian Republic
+I-INT	I-INT	I-INT	IGO	C	INTELSAT	International Telecommunications Satellite Organization	-	International Telecommunications Satellite Organization
+ABAE	ABAE	VE	O	C	ABAE	Agencia Bolivariana para Activadades Espaciales	-	Bolivarian Agency for Space Activities
+AFRL	AFRL	US	O/LA/PL/S	D	AFRL/RV	US Air Force Research Laboratories/RV (Space Vehicles Directorate)	USAF	-
+AFSMC	AFWDD	US	O/LA/PL	D	USAF SMC	US Air Force Space and Missile Center	USAF	-
+AFSPC	AFSPC	US	O/LA/S	D	USAF AFSPC	US Air Force Space Command	USAF	-
+AGSL	AGSL	PG	O	B	ABS Global PNG	ABS Global Satellite Ltd.	-	-
+ALYAH	ALYAH	UAE	O	B	Yahsat	Al Yah Satellite Communications Co. PrJsc	-	-
+APT	APT	HK	O	B	APT	Asia Pacific Telecom	-	-
+ASI	ASI	I	O/LA/S	C	ASI	Agenzia Spaziale Italiana	I	Italian Space Agency
+ASTSC	ASTSC	J	O/PL	B	Astroscale	Astroscale Japan Inc.	-	-
+ASTUK	DEHAVS	UK	PL	B	Astrium (UK)	Astrium Ltd (UK)	EADS	-
+AZER	AZER	AZ	O	C	Azerkosmos	Azerkosmos, Azerbaycan Resp. Rabita va Informasiya Texnologiyalari Nazirliyi	AZRITN	Azerkosmos, Min. of Comms and IT.
+AZRITN	AZRITN	AZ	P	C	Azerspace	Azerbaycan Respublikasinin Rabita va Informasiya Texnologiyalari Nazirliyi	-	Ministry of Communications and Information Technnology
+CASC	CASC	CN	O/LA/LV/PL	C	CASC	Zhongguo hangtian keji jituangongsi	-	China Aerospace Corp
+CAST	CAST	CN	O/LA/PL/S	C	CAST	Zhongguo kongjian jishu yanjiu yuan	CASC	Chinese Academy of Space Technology, Beijing (CASC 5th Acad)
+CHIS	CHIS	CN	O	B	Chinasat	Zhongguo weixing tongxin gongsi?	-	China Satellite Communications Crop.
+CHISA	CHIS	CN	O	B	China Satcom	Zhongguo weixingtongxin jituangongsi  (Zhongguo wei tong)	-	China Satellite Communications Corp. Group (China Satcom)
+CHISAE	CHIS	CN	O	C	China Satcom	Zhongguo weixingtongxin jituangongsi  (Zhongguo wei tong)	CASC	China Satellite Communications Corp. Group (China Satcom)
+CHORI	CHORI	CN	O	B	China Orient	Zhongguo dongfangtongxin weixing youxianzerengongsi	CHIS	China Orient Telecom Satellite Co. Ltd.
+CNES	CNES	F	O/LA/LV/PL/W/LS/S	C	CNES	Centre Nationale d'Etudes Spatiales, Paris	-	National Space Research Center
+CNSA	MAI	CN	O/LA/PL	C	CNSA	Guojia Hangtian Ju	-	China National Space Administration
+DGA	DMA	F	O/LA/LS/S	D	DGA	Delegation Generale de l'Armament, Paris	F	General Delegation for Ordnance
+DORBIT	DORBIT	I	O/PL/E	B	D-ORBIT	D-ORBIT	-	-
+EADS	EADS	NL	LV/PL/S	B	EADS	European Aeronautic Defense and Space Company EADS N.V.	-	-
+EUTSA	EUTEL	F	O	B	EutelsatSA	Eutelsat SA	-	-
+FKA	MOM	RU	O/LA/PL	C	Roskosmos	Federal'noe kosmicheskoe agentstvo Rossii (Roskosmos)	-	Roskosmos
+FSB	KGB	RU	O	D	FSB	Federal'naya sluzhba bezopasnosti Rossiyskoy Federatsii	-	-
+GILM	GILM	AU	LV	B	Gilmour Space	Gilmour Space Technologies	-	-
+IAI	IAI	IL	O/LA/LV/PL/E	B	IAI	Israeli Aircraft Industries, Mabat factory	-	-
+IAIS	IAIS	IL	O/PL	B	IAI Spacecom	IAI Space Communications Ltd.	IAI	-
+ICEUS	ICEUS	US	O/PL	B	ICEYE US	ICEYE US	ICEYE	-
+ICEYE	ICEYE	FI	O/PL	B	ICEYE	ICEYE	-	-
+INTEL	INTEL	I-INT	O	C	INTELSAT	INTELSAT	I-INT	-
+INTELB	INTELB	BM	O	B	Intelsat Ltd	Intelsat Ltd.	-	-
+INTELD	INTELD	US	O	B	Intelsat Ltd (US)	Intelsat Ltd, US headquarters	INTELB	-
+INTELS	INTELB	L	O	B	Intelsat SA	Intelsat S.A.	-	-
+INTELU	INTELD	US	O	B	Intelsat SA (US)	Intelsat S.A., US headquarters	INTELS	-
+JSC	JSC	US	O/LA/PL/S	C	NASA JSC	NASA Johnson Space Flight Center	NASA	-
+KS	KS	RU	O	B	KosSvyaz	GP Kosmicheskaya Svyaz, Moskva	-	Russian Satellite Communications Co.
+KVR	GUKOS	RU	O/LA	D	KVR	Kosmichesikiye voyska Rossii	MORF	Russian Space Forces
+MHI	MHI	J	LA/LV/PL/E	B	MHI	Mitsubishi Jukogyo Kabushiki-kaisha	-	Mitsubishi Heavy Industries (Launch Services)
+MOD	MOD	UK	O/LA/LS	D	UK MoD	Ministry of Defence, London	-	-
+MORF	MVS	RU	O	D	MO RF	Min. Oboroni (Ministry of Defense), Rossiya	-	Russian Ministry of Defense
+NASA	NASA	US	O/LA/LV/PL/W/LS/S	C	NASA	National Aeronautics and Space Administration	-	-
+NDAWN	NDAWN	MU	O	B	New Dawn	New Dawn Satellite Co. (Intelsat/Convergence Partners)	INTELS	-
+NGCOM	NGCOM	NG	O	C	Nigcomsat	Nigcomsat (Nigerian Comm. Sat. Ltd, Federal Ministry of Science and Tech)	-	-
+NGIS	OATK	US	LA	B	NGIS	Northrop Grumman Innovation Systems	-	-
+NGISD	OSC	US	O/LA/PL	B	NGIS SSG	Northrop Grumman Space Systems Group (SSG)	NGIS	-
+NROC	NRO	US	O/LA	D	NRO	National Reconnaissance Office	-	-
+OPTS	AUSS	AU	O	B	SingTel Optus	SingTel Optus Communications Pty	-	-
+PAN	PAN	US	O	B	Panamsat	Panamsat Corp	-	-
+PARA	PARA	UK	O	B	Paradigm	Paradigm Secure Comms, Astrium Services	-	-
+PLA	PLA	CN	LA/E/LS	D	PLA	Zhonggou Renmin Jiefangjun	-	Chinese People's Liberation Army
+RESH	NPOPM	RU	O/PL	C	Resehetnev ISS	OAO M. Reshetnev Information Satellite Systems	FKA	-
+SAST	SBA	CN	O/LA/LV/PL	B	SAST	Shanghai hangtian jishu yanjiuyuan	CASC	Shanghai Academy of Space Technology (CASC 8th Acad)
+SES	SES	L	O	B	SES	Soci\'et\'e Europeene des Satellites, Luxembourg	-	-
+SESS	NSAB	S	O	B	SES Sirius	SES Sirius AB	SES	-
+SESSA	SES	L	O	B	SES	SES S.A.	-	-
+SESSAN	NSS	NL	O	B	SES	SES S.A. (The Hague)	SESSA	-
+SESSL	SESSL	UK	O	B	SES Sat. Leasing	SES Satellite Leasing Ltd. (Isle of Man)	SES	-
+SPLOG	SPLOG	US	PL	B	Space Logistics	Space Logistics LLC	NGISD	-
+SSTLA	SSTL	UK	O/PL	B	SSTL (Astrium)	Surrey Satellite Technology Ltd/Astrium	ASTUK	-
+STELLT	STELLT	F	O	B	Stellat	Stellat	-	Stellat
+STFISH	STFISH	US	O	B	Starfish Space	Starfish Space	-	-
+SUPA	SUPA	PK	O/LA/LV/PL/LS/S	C	SUPARCO	Space and Upper Atmosphere Research Commission	-	-
+TELK	PER	ID	O	B	Telkom	PT Telekomunikasi Indonesia Tbk (Telkom)	-	PT Telecommunications of Indonesia
+TNOR	TNOR	N	O	B	Telenor	Telenor	-	Telenor
+TSKHM	TSKHM	RU	O/PL	D	TsNIIKhM	TsNII Khimii i Mekhaniki	-	Central Sci. Res. Inst. for Chemistry and Mechanics
+TSVS	VTS	RU	O	D	TS VS RF	Topografichecskaya Sluzhba Vooruzhyonnikh Sil RF	-	Topographics Service of the Russian Armed Froces
+TURKS	TURKP	TR	O	B	Turksat	Turksat Uydu Haberlesme Kablo TV ve Isletme A.S.	-	Turksat Satellite Comm. and Cable TV Operation AS
+USAF	USAF	US	O/LA/PL/LS/S	D	USAF	United States Air Force	-	-
+USSF	AFSPC	US	O/LA/PL/LS/S	D	USSF	United States Space Force	-	-
+VOENT	VOENT	RU	O	D	Voentelekom	Voentelekom	-	-
+VOKS	VVS	RU	P	D	VKS VS RF	Vozdushno-Kosmicheksiye Sili VS RF	-	Russian Aerospace Forces
+VVKO	GUKOS	RU	O/LA	D	VVKO	Voisk Vosdushno-Kosmicheskoi Oborona	MORF	Aerospace Defence Forces
+VVKOV	GUKOS	RU	O/LA	D	VVKO VKS	Voisk Vosdushno-Kosmicheskoi Oborona, Vosdushno-Kosmocheskie Sili	VOKS	Aerospace Defence Forces
+YWZB	YWZB	CN	O/PL	C	Yaogan Zongti	Yaogan Weixing Zongti Bu	CAST	General Department of Remote Sensing Satellites
+ZLZB	ZZB	CN	LA	D	PLA SSF	ZRJ Zhanlue Zhichi Budui	PLA	Strategic Support Troops
+ZZB	ZZB	CN	O/LA	D	PLA GAD	Zhongguo Renmin Jiefangjun Zong Zhuangbei Bu	PLA	General Armaments Dept. of the PLA

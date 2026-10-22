@@ -1,0 +1,27 @@
+{
+  "about": "The snapshots the truth is built from, as made by scripts/truth/fetch-sources.ts, with the hash and size of each whole file so a new edition is a visible change. The hand files are the statements typed by a person; they are not snapshots.",
+  "snapshots": {
+    "gcat-satcat": {
+      "url": "https://planet4589.org/space/gcat/tsv/cat/satcat.tsv",
+      "fetchedOn": "2026-10-21",
+      "originalSha256": "0087c3d10577b44717ba2d902bc9d88ff4cde86efd20ed9dab72af79e672ee65",
+      "originalBytes": 19297162,
+      "snapshot": "sources/gcat-satcat.tsv",
+      "madeWith": "reduced to the rows of the objects the hand files name, in the columns JCAT, Satcat, Launch_Tag, Piece, Type, Name, PLName, LDate, Status, Owner, State, OpOrbit, every kept cell verbatim",
+      "snapshotSha256": "087180be4c0ba3fa837ff818d8233a00eb0040f3db14426a986ef6c02eb8424a",
+      "updated": "2026 Oct 17 1832:50",
+      "licence": "CC-BY-4.0, Jonathan McDowell, planet4589.org"
+    },
+    "gcat-orgs": {
+      "url": "https://planet4589.org/space/gcat/tsv/tables/orgs.tsv",
+      "fetchedOn": "2026-10-21",
+      "originalSha256": "ccbd55bb58b775fefb88a775b50c727d409e847cbc42186ed887d2950a70018d",
+      "originalBytes": 711817,
+      "snapshot": "sources/gcat-orgs.tsv",
+      "madeWith": "reduced to the owners of those objects and the chain of their parents, in the columns Code, UCode, StateCode, Type, Class, ShortName, Name, Parent, EName",
+      "snapshotSha256": "d6a439a03e712b7cacddda1077f4cc4e768787787d25ac11a7dc80f0bb5341b7",
+      "updated": "2026 Oct 17 1831:24",
+      "licence": "CC-BY-4.0, Jonathan McDowell, planet4589.org"
+    }
+  }
+}

@@ -1,0 +1,1646 @@
+{
+  "about": "Statements typed by hand from public sources on rendezvous in low Earth orbit, one statement per source per pair of objects. Each gives what the source states of the stages the detector raises: plane (the chaser within a fraction of a degree of the target's plane, by launch or by manoeuvre), height (the semi-major axes matched), beside (the chaser holding near the target), closest (the nearest pass, in kilometres) and left (the chaser moving away). A window is a UTC day range, from and to inclusive, with the precision the source gives. Every statement cites where it was read and the day it was published. Never derived by a program.",
+  "statements": [
+    {
+      "source": "analyst",
+      "ref": "Nico Janssen, Seesat-L, \"Kosmos 2542 and 2543\", 2 January 2020",
+      "url": "https://www.satobs.org/seesat/Jan-2020/0008.html",
+      "statedOn": "2020-01-02",
+      "chaser": {
+        "catalogueNumber": 44835,
+        "name": "Kosmos 2543"
+      },
+      "target": {
+        "catalogueNumber": 39232,
+        "name": "USA 245"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "The orbit planes of USA 245 and Kosmos 2543 are now only 0.26 degrees apart",
+        "from": "2019-12-06",
+        "to": "2020-01-02",
+        "precision": "month",
+        "how": "manoeuvre",
+        "separationDeg": 0.26
+      },
+      "height": null,
+      "beside": null,
+      "closest": null,
+      "left": null,
+      "quote": "Kosmos 2542 was launched on 2019-11-25 into a 368x857 km orbit. On 2019-12-06 the inspector satellite Kosmos 2543 was deployed. On 2019-12-09 or 2019-12-10 USA 245 changed its orbit. Is Kosmos 2543 chasing USA 245?",
+      "note": "The deployment of Kosmos 2543 from Kosmos 2542 is dated 6 December 2019; the plane separation is as of 2 January 2020."
+    },
+    {
+      "source": "analyst",
+      "ref": "Michael Thompson, Seesat-L, 29 January 2020, with Nico Janssen's elements in the same thread",
+      "url": "https://www.satobs.org/seesat/Jan-2020/0203.html",
+      "statedOn": "2020-01-29",
+      "chaser": {
+        "catalogueNumber": 44797,
+        "name": "Kosmos 2542"
+      },
+      "target": {
+        "catalogueNumber": 39232,
+        "name": "USA 245"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "planes about 0.55 degrees apart",
+        "from": "2020-01-21",
+        "to": "2020-01-24",
+        "precision": "day",
+        "how": "manoeuvre",
+        "separationDeg": 0.55
+      },
+      "height": null,
+      "beside": {
+        "stated": "manoeuvres of 21 to 24 January 2020 parked it permanently in view of USA 245, 150 to 500 km away",
+        "from": "2020-01-21",
+        "to": "2020-01-24",
+        "precision": "day"
+      },
+      "closest": {
+        "stated": "at a distance between 150 and 500km away",
+        "km": 150,
+        "on": "2020-01-29",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "has now 'parked' it in a position where it is permanently in view of USA 245, at a distance between 150 and 500km away",
+      "note": "Kosmos 2542 at 369 x 915 km, USA 245 at 283 x 1002 km: the heights were not matched."
+    },
+    {
+      "source": "analyst",
+      "ref": "Michael Thompson, Seesat-L, 2 February 2020",
+      "url": "https://www.satobs.org/seesat/Feb-2020/0010.html",
+      "statedOn": "2020-02-02",
+      "chaser": {
+        "catalogueNumber": 44797,
+        "name": "Kosmos 2542"
+      },
+      "target": {
+        "catalogueNumber": 39232,
+        "name": "USA 245"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "Closest approach will be between Feb 7 and 10",
+        "km": null,
+        "on": null,
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "Cosmos 2542 made another maneuver on the 31st and is now drifting back towards USA 245. Closest approach will be between Feb 7 and 10.",
+      "note": "A prediction, from the elements of 2 February; the closest pass's window is 7 to 10 February 2020."
+    },
+    {
+      "source": "analyst",
+      "ref": "Nico Janssen, Seesat-L, 19 February 2020",
+      "url": "https://www.satobs.org/seesat/Feb-2020/0133.html",
+      "statedOn": "2020-02-19",
+      "chaser": {
+        "catalogueNumber": 44797,
+        "name": "Kosmos 2542"
+      },
+      "target": {
+        "catalogueNumber": 39232,
+        "name": "USA 245"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "plane 0.3 degrees from USA 245",
+        "from": "2020-02-19",
+        "to": "2020-02-19",
+        "precision": "day",
+        "how": "manoeuvre",
+        "separationDeg": 0.3
+      },
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "current range USA 245 to Kosmos 2542 655 to 1341 km",
+        "km": 655,
+        "on": "2020-02-19",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "After a couple of small orbit maneuvers in the past weeks",
+      "note": "USA 245 at 269 x 1018 km after small manoeuvres of its own; Kosmos 2542 at 371 x 915 km. Kosmos 2543's plane was 2.4 degrees off."
+    },
+    {
+      "source": "analyst",
+      "ref": "Jonathan McDowell, \"Nivelir\" timeline, planet4589.org",
+      "url": "https://www.planet4589.org/space/plots/niv/index.html",
+      "statedOn": "2025-04-28",
+      "chaser": {
+        "catalogueNumber": 44797,
+        "name": "Kosmos 2542"
+      },
+      "target": {
+        "catalogueNumber": 39232,
+        "name": "USA 245"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": {
+        "stated": "Orbit raised (2020 Jan); 30 km approaches to USA 245 (2020 Jan-Mar)",
+        "from": "2020-01-01",
+        "to": "2020-01-31",
+        "precision": "month"
+      },
+      "closest": {
+        "stated": "30 km approaches to USA 245 (2020 Jan-Mar)",
+        "km": 30,
+        "on": null,
+        "precision": "month"
+      },
+      "left": {
+        "stated": "perigee lowered, decay began (2020 Apr 25)",
+        "from": "2020-04-25",
+        "to": "2020-04-25",
+        "precision": "day"
+      },
+      "quote": "Orbit raised (2020 Jan); 30 km approaches to USA 245 (2020 Jan-Mar); perigee lowered, decay began (2020 Apr 25)",
+      "note": "The page is undated; the day given is that of Hendrickx's article, which cites it. The closest pass's window is January to March 2020."
+    },
+    {
+      "source": "analyst",
+      "ref": "Bart Hendrickx, \"Project Nivelir: Russia's inspection satellites (part 1)\", The Space Review, 28 April 2025",
+      "url": "https://thespacereview.com/article/4979/1",
+      "statedOn": "2025-04-28",
+      "chaser": {
+        "catalogueNumber": 44797,
+        "name": "Kosmos 2542"
+      },
+      "target": {
+        "catalogueNumber": 39232,
+        "name": "USA 245"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "co-planar with USA 245",
+        "from": "2019-12-01",
+        "to": "2020-02-29",
+        "precision": "month",
+        "how": "manoeuvre",
+        "separationDeg": null
+      },
+      "height": null,
+      "beside": null,
+      "closest": null,
+      "left": null,
+      "quote": "co-planar with USA 245 and had several distant encounters with the American satellite in late 2019 and early 2020",
+      "note": "Said of both Kosmos 2542 and Kosmos 2543."
+    },
+    {
+      "source": "government",
+      "ref": "Gen. John Raymond, U.S. Space Force, statement to Time, 10 February 2020, as quoted by The War Zone, 23 July 2020",
+      "url": "https://www.twz.com/35057/space-force-boss-says-russia-has-been-testing-its-killer-satellites-in-orbit",
+      "statedOn": "2020-02-10",
+      "chaser": {
+        "catalogueNumber": 44797,
+        "name": "Kosmos 2542"
+      },
+      "target": {
+        "catalogueNumber": 39232,
+        "name": "USA 245"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": {
+        "stated": "the two Russian satellites were manoeuvring near a U.S. government satellite in February 2020",
+        "from": "2020-02-01",
+        "to": "2020-02-10",
+        "precision": "month"
+      },
+      "closest": null,
+      "left": null,
+      "quote": "This is unusual and disturbing behavior and has the potential to create a dangerous situation in space.",
+      "note": "The statement names no satellite; the press identified USA 245."
+    },
+    {
+      "source": "news",
+      "ref": "Neel Patel, \"A Russian satellite seems to be tailing a US spy satellite in Earth's orbit\", MIT Technology Review, 3 February 2020",
+      "url": "https://www.technologyreview.com/2020/02/03/349146/",
+      "statedOn": "2020-02-03",
+      "chaser": {
+        "catalogueNumber": 44797,
+        "name": "Kosmos 2542"
+      },
+      "target": {
+        "catalogueNumber": 39232,
+        "name": "USA 245"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": {
+        "stated": "the manoeuvre to shadow began around 20 January 2020",
+        "from": "2020-01-20",
+        "to": "2020-01-20",
+        "precision": "day"
+      },
+      "closest": {
+        "stated": "less than 186 miles (300 km)",
+        "km": 300,
+        "on": "2020-02-03",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "It's not a coincidence.",
+      "note": "The quote is Thomas Roberts's, of CSIS."
+    },
+    {
+      "source": "analyst",
+      "ref": "Marco Langbroek, \"Kosmos 2558, a Russian inspector satellite targetting the US IMINT satellite USA 326?\", SatTrackCam Leiden, 2 August 2022",
+      "url": "https://sattrackcam.blogspot.com/2022/08/kosmos-2558-russian-inspector-satellite.html",
+      "statedOn": "2022-08-02",
+      "chaser": {
+        "catalogueNumber": 53323,
+        "name": "Kosmos 2558"
+      },
+      "target": {
+        "catalogueNumber": 51445,
+        "name": "USA 326"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "launched at 20:25 UTC into the orbital plane of USA 326, a RAAN difference of only 0.04 degree",
+        "from": "2022-08-01",
+        "to": "2022-08-01",
+        "precision": "day",
+        "how": "launch",
+        "separationDeg": 0.04
+      },
+      "height": null,
+      "beside": null,
+      "closest": null,
+      "left": null,
+      "quote": "it did indeed launch at 20:25 UTC, into the orbital plane of USA 326",
+      "note": "Kosmos 2558 at 435 x 452 km, 97.25 degrees; about 60 km lower than USA 326."
+    },
+    {
+      "source": "analyst",
+      "ref": "Marco Langbroek, \"The flyby of USA 326 by Kosmos 2558 on August 4: a post-analysis\", SatTrackCam Leiden, 6 August 2022",
+      "url": "https://sattrackcam.blogspot.com/2022/08/the-flyby-of-usa-326-by-kosmos-2558-on.html",
+      "statedOn": "2022-08-06",
+      "chaser": {
+        "catalogueNumber": 53323,
+        "name": "Kosmos 2558"
+      },
+      "target": {
+        "catalogueNumber": 51445,
+        "name": "USA 326"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "the close flyby happened near 14:16:27 UTC (August 4, 2022) at a nominal distance of ~67 km",
+        "km": 67,
+        "on": "2022-08-04",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "the close flyby happened near 14:16:27 UTC (August 4, 2022)",
+      "note": "64 km of the 67 km was vertical: the chaser flew under the target."
+    },
+    {
+      "source": "analyst",
+      "ref": "Marco Langbroek, \"Kosmos 2558 keeping its orbit close to USA 326\", SatTrackCam Leiden, 7 September 2022, updated 9 September",
+      "url": "https://sattrackcam.blogspot.com/2022/09/kosmos-2558-keeping-its-orbit-close-to.html",
+      "statedOn": "2022-09-07",
+      "chaser": {
+        "catalogueNumber": 53323,
+        "name": "Kosmos 2558"
+      },
+      "target": {
+        "catalogueNumber": 51445,
+        "name": "USA 326"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "The two objects basically share the same orbital plane; inclination adjustments keep the precession of the two planes synchronised",
+        "from": "2022-08-01",
+        "to": "2022-09-09",
+        "precision": "month",
+        "how": "launch",
+        "separationDeg": null
+      },
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "flyby's at distances of 60 to 80 km each 5 days",
+        "km": 60,
+        "on": null,
+        "precision": "month"
+      },
+      "left": null,
+      "quote": "Kosmos 2558 is 'taking over' USA 326 every 5 days, resulting in flyby's at distances of 60 to 80 km each 5 days",
+      "note": "An orbit-raising manoeuvre on 8 September 2022 around 11:10 UTC, apogee up 5.5 km. The chaser laps the target: no phase match."
+    },
+    {
+      "source": "analyst",
+      "ref": "Marco Langbroek, \"The Russian KOSMOS 2576 launch of May 16, and USA 314\", SatTrackCam Leiden, 20 May 2024, the update on Kosmos 2558",
+      "url": "https://sattrackcam.blogspot.com/2024/05/the-russian-kosmos-2576-launch-of-may.html",
+      "statedOn": "2024-05-20",
+      "chaser": {
+        "catalogueNumber": 53323,
+        "name": "Kosmos 2558"
+      },
+      "target": {
+        "catalogueNumber": 51445,
+        "name": "USA 326"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "approaches to ~50 km to USA 326 each 7 days",
+        "km": 50,
+        "on": null,
+        "precision": "month"
+      },
+      "left": null,
+      "quote": "approaches to ~50 km to USA 326 each 7 days",
+      "note": null
+    },
+    {
+      "source": "analyst",
+      "ref": "Bart Hendrickx, \"Project Nivelir: Russia's inspection satellites (part 2)\", The Space Review, 5 May 2025",
+      "url": "https://thespacereview.com/article/4982/1",
+      "statedOn": "2025-05-05",
+      "chaser": {
+        "catalogueNumber": 53323,
+        "name": "Kosmos 2558"
+      },
+      "target": {
+        "catalogueNumber": 51445,
+        "name": "USA 326"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "no closer than about 50 kilometers",
+        "km": 50,
+        "on": null,
+        "precision": "year"
+      },
+      "left": null,
+      "quote": "regularly performs orbit corrections",
+      "note": "USA 326 is roughly 40 kilometres higher."
+    },
+    {
+      "source": "analyst",
+      "ref": "Pavel Podvig, \"Cosmos-2558, an inspector satellite\", russianforces.org, 1 August 2022, updated 13 September 2026",
+      "url": "https://russianforces.org/blog/2022/08/cosmos-2558_-_an_inspector_sat.shtml",
+      "statedOn": "2026-09-13",
+      "chaser": {
+        "catalogueNumber": 53323,
+        "name": "Kosmos 2558"
+      },
+      "target": {
+        "catalogueNumber": 51445,
+        "name": "USA 326"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "approached to 70-80 km",
+        "km": 70,
+        "on": null,
+        "precision": "year"
+      },
+      "left": {
+        "stated": "stopped orbit maintenance in April 2025 and re-entered on 13 September 2026",
+        "from": "2025-04-01",
+        "to": "2025-04-30",
+        "precision": "month"
+      },
+      "quote": "stopped orbit maintenance in April 2025 and re-entered on 13 September 2026",
+      "note": "The end of orbit maintenance is as read by Jonathan McDowell; the reentry is dated 12 September by other reports."
+    },
+    {
+      "source": "government",
+      "ref": "Gen. James Dickinson, U.S. Space Command, to NBC News, August 2022, as quoted by Gizmodo",
+      "url": null,
+      "statedOn": "2022-08-10",
+      "chaser": {
+        "catalogueNumber": 53323,
+        "name": "Kosmos 2558"
+      },
+      "target": {
+        "catalogueNumber": 51445,
+        "name": "USA 326"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "in a similar orbit to one of our high-value assets",
+        "from": "2022-08-01",
+        "to": "2022-08-10",
+        "precision": "month",
+        "how": "launch",
+        "separationDeg": null
+      },
+      "height": null,
+      "beside": null,
+      "closest": null,
+      "left": null,
+      "quote": "We see that it's in a similar orbit to one of our high-value assets",
+      "note": "The statement names no satellite. The day is approximate: the interview's date was not found."
+    },
+    {
+      "source": "analyst",
+      "ref": "Marco Langbroek, \"Kosmos 2558 released an object on orbit on June 26\", SatTrackCam Leiden, 29 June 2025, updated 4 July",
+      "url": "https://sattrackcam.blogspot.com/2025/06/kosmos-2558-released-object-on-orbit-on.html",
+      "statedOn": "2025-06-29",
+      "chaser": {
+        "catalogueNumber": 64627,
+        "name": "Kosmos 2558 subsatellite"
+      },
+      "target": {
+        "catalogueNumber": 51445,
+        "name": "USA 326"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "released from Kosmos 2558 on 26 June 2025 near 12:03 UTC, in its plane",
+        "from": "2025-06-26",
+        "to": "2025-06-26",
+        "precision": "day",
+        "how": "manoeuvre",
+        "separationDeg": null
+      },
+      "height": null,
+      "beside": null,
+      "closest": null,
+      "left": null,
+      "quote": "all three remaining missions are still dedicatedly shadowing their American targets",
+      "note": "Object C, catalogued 64627, was 143 km from Kosmos 2558 on 28 to 29 June and lowered its orbit by 15 km on 3 July near 18:42 UTC. A report of 23 September 2026 puts it 81 km from USA 326 in July 2025."
+    },
+    {
+      "source": "analyst",
+      "ref": "Marco Langbroek, \"The Russian KOSMOS 2576 launch of May 16, and USA 314: another 'inspector satellite'?\", SatTrackCam Leiden, 20 May 2024, updated 22 May",
+      "url": "https://sattrackcam.blogspot.com/2024/05/the-russian-kosmos-2576-launch-of-may.html",
+      "statedOn": "2024-05-20",
+      "chaser": {
+        "catalogueNumber": 59773,
+        "name": "Kosmos 2576"
+      },
+      "target": {
+        "catalogueNumber": 48247,
+        "name": "USA 314"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "differs in RAAN with USA 314 by only 0.02 degrees, and in inclination by only 0.8 degrees",
+        "from": "2024-05-16",
+        "to": "2024-05-16",
+        "precision": "day",
+        "how": "launch",
+        "separationDeg": 0.8
+      },
+      "height": null,
+      "beside": null,
+      "closest": null,
+      "left": null,
+      "quote": "differs in RAAN with USA 314 by only 0.02 degrees, and in inclination by only 0.8 degrees",
+      "note": "Launched 16 May 2024 21:21:29 UTC into 451 x 436 km, 97.25 degrees; USA 314 at 555 x 772 km, 98.1 degrees. The inclinations differ by 0.8 degrees, so the planes are 0.8 degrees apart though the nodes match."
+    },
+    {
+      "source": "government",
+      "ref": "Brig. Gen. Pat Ryder, Pentagon press secretary, 21 May 2024, as reported by NPR, 30 May 2024",
+      "url": "https://www.npr.org/2024/05/30/nx-s1-4975741/",
+      "statedOn": "2024-05-21",
+      "chaser": {
+        "catalogueNumber": 59773,
+        "name": "Kosmos 2576"
+      },
+      "target": {
+        "catalogueNumber": 48247,
+        "name": "USA 314"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "deployed into the same orbit as a U.S. government satellite",
+        "from": "2024-05-16",
+        "to": "2024-05-16",
+        "precision": "day",
+        "how": "launch",
+        "separationDeg": null
+      },
+      "height": null,
+      "beside": null,
+      "closest": null,
+      "left": null,
+      "quote": "characteristics resembling previously deployed counterspace payloads",
+      "note": "The satellite is unnamed in the statement; U.S. Ambassador Robert Wood called it a counterspace weapon at the UN Security Council on 20 May 2024."
+    },
+    {
+      "source": "analyst",
+      "ref": "Bart Hendrickx, \"Project Nivelir: Russia's inspection satellites (part 2)\", The Space Review, 5 May 2025",
+      "url": "https://thespacereview.com/article/4982/1",
+      "statedOn": "2025-05-05",
+      "chaser": {
+        "catalogueNumber": 59773,
+        "name": "Kosmos 2576"
+      },
+      "target": {
+        "catalogueNumber": 48247,
+        "name": "USA 314"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "no closer than about 50 kilometers",
+        "km": 50,
+        "on": null,
+        "precision": "year"
+      },
+      "left": {
+        "stated": "A series of maneuvers by Kosmos-2576 this February reportedly moved it out of plane with USA 314",
+        "from": "2025-02-01",
+        "to": "2025-02-28",
+        "precision": "month"
+      },
+      "quote": "A series of maneuvers by Kosmos-2576 this February reportedly moved it out of plane with USA 314",
+      "note": "Citing CSIS's Space Threat Assessment 2025. Langbroek (29 June 2025) and Breaking Defense (30 May 2025) say it was still co-planar then: a disagreement."
+    },
+    {
+      "source": "analyst",
+      "ref": "Marco Langbroek, \"RPO Galore: complex proximity operations by Russian satellites\", SatTrackCam Leiden, 29 June 2025",
+      "url": "https://sattrackcam.blogspot.com/2025/06/rpo-galore-complex-proximity-operations.html",
+      "statedOn": "2025-06-29",
+      "chaser": {
+        "catalogueNumber": 59773,
+        "name": "Kosmos 2576"
+      },
+      "target": {
+        "catalogueNumber": 48247,
+        "name": "USA 314"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "still dedicatedly shadowing its American target",
+        "from": "2024-05-16",
+        "to": "2025-06-29",
+        "precision": "day",
+        "how": "launch",
+        "separationDeg": null
+      },
+      "height": null,
+      "beside": null,
+      "closest": null,
+      "left": null,
+      "quote": "all three remaining missions are still dedicatedly shadowing their American targets",
+      "note": null
+    },
+    {
+      "source": "analyst",
+      "ref": "Marco Langbroek, \"Kosmos 2588 has been placed in the same orbital plane as the US spy satellite USA 338: another RPO?\", SatTrackCam Leiden, 23 May 2025",
+      "url": "https://sattrackcam.blogspot.com/2025/05/kosmos-2588-has-been-placed-in-same.html",
+      "statedOn": "2025-05-23",
+      "chaser": {
+        "catalogueNumber": 64095,
+        "name": "Kosmos 2588"
+      },
+      "target": {
+        "catalogueNumber": 53883,
+        "name": "USA 338"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "The difference in RAAN is only 0.11 degrees, the difference in inclination is a mere 0.6 degrees",
+        "from": "2025-05-23",
+        "to": "2025-05-23",
+        "precision": "day",
+        "how": "launch",
+        "separationDeg": 0.6
+      },
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "They can come to within 100 km of each other",
+        "km": 100,
+        "on": null,
+        "precision": "month"
+      },
+      "left": null,
+      "quote": "This is the fourth time in the last five years that Russia has placed a military satellite in the same orbital plane",
+      "note": "Launched 23 May 2025 08:36 UTC into about 464 x 481 km at 73 degrees; USA 338 at about 400 x 426 km, 73.6 degrees."
+    },
+    {
+      "source": "tracker",
+      "ref": "Slingshot Aerospace, as reported by Theresa Hitchens, \"Russia's new Cosmos satellite orbiting near US sat piques ASAT fears\", Breaking Defense, 30 May 2025",
+      "url": "https://breakingdefense.com/2025/05/russias-new-cosmos-satellite-orbiting-near-us-sat-piques-asat-fears/",
+      "statedOn": "2025-05-30",
+      "chaser": {
+        "catalogueNumber": 64095,
+        "name": "Kosmos 2588"
+      },
+      "target": {
+        "catalogueNumber": 53883,
+        "name": "USA 338"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "closest approach 93.9 km, a fly-by roughly every 4 days",
+        "km": 93.9,
+        "on": "2025-05-30",
+        "precision": "month"
+      },
+      "left": null,
+      "quote": "the objects will have a 'fly-by' roughly every 4 days, leading to repeated close approaches",
+      "note": "The day of the 93.9 km pass is not stated; the article is of 30 May 2025. The chaser laps the target: no phase match."
+    },
+    {
+      "source": "tracker",
+      "ref": "Integrity ISR (Greg Gillinger), press release, 22 May 2026",
+      "url": "https://www.einpresswire.com/shareable-preview/WbtYuKA4PltB6dHexnjZow",
+      "statedOn": "2026-05-22",
+      "chaser": {
+        "catalogueNumber": 68762,
+        "name": "Cosmos 2612"
+      },
+      "target": {
+        "catalogueNumber": 59103,
+        "name": "ICEYE-X36"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "Cosmos 2610 to 2614 raised their inclination from 97.0 to 97.8 degrees between 14 and 20 May 2026, matching ICEYE-X36",
+        "from": "2026-05-14",
+        "to": "2026-05-20",
+        "precision": "day",
+        "how": "manoeuvre",
+        "separationDeg": null
+      },
+      "height": {
+        "stated": "altitude about 547 km, within 2.5 km of ICEYE-X36",
+        "from": "2026-05-14",
+        "to": "2026-05-20",
+        "precision": "day"
+      },
+      "beside": null,
+      "closest": null,
+      "left": null,
+      "quote": "These five Russian satellites are now effectively co-planar with ICEYE-X36.",
+      "note": "About 105 to 106 m/s per satellite. KeepTrack's per-satellite burn windows: Cosmos 2612 on 15 to 16 May, its plane within 0.03 degrees afterwards."
+    },
+    {
+      "source": "tracker",
+      "ref": "COMSPOC on X, \"Russian satellites approaching ICEYE: a closer look at the timeline\", 15 July 2026",
+      "url": "https://x.com/COMSPOC_OPS/status/2077469954027532744",
+      "statedOn": "2026-07-15",
+      "chaser": {
+        "catalogueNumber": 68762,
+        "name": "Cosmos 2612"
+      },
+      "target": {
+        "catalogueNumber": 59103,
+        "name": "ICEYE-X36"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "Cosmos 2610 to 2614 now share the same orbital plane as ICEYE-X36, X37 and X38, all phased out along the orbit",
+        "from": "2026-05-15",
+        "to": "2026-05-22",
+        "precision": "month",
+        "how": "manoeuvre",
+        "separationDeg": null
+      },
+      "height": null,
+      "beside": null,
+      "closest": null,
+      "left": null,
+      "quote": "COSMOS 2612 could intercept ICEYE-X36 with a delta-V of 4.4 m/s",
+      "note": "Tracking data from LeoLabs. The intercept is a projection for a manoeuvre on 16 July 2026, not an observation."
+    },
+    {
+      "source": "institute",
+      "ref": "Clayton Swope and Chantal Li, \"Could Russia Be Poised to Use an On-Orbit Weapon Against a Commercial Satellite?\", CSIS, 15 October 2026",
+      "url": "https://www.csis.org/analysis/could-russia-be-poised-use-orbit-weapon-against-commercial-satellite",
+      "statedOn": "2026-10-15",
+      "chaser": {
+        "catalogueNumber": 68762,
+        "name": "Cosmos 2612"
+      },
+      "target": {
+        "catalogueNumber": 59103,
+        "name": "ICEYE-X36"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "Over two weeks beginning on September 30, 2026, Cosmos 2612 executed a series of new maneuvers that brought it back into the same plane",
+        "from": "2026-09-30",
+        "to": "2026-10-14",
+        "precision": "day",
+        "how": "manoeuvre",
+        "separationDeg": null
+      },
+      "height": {
+        "stated": "and to nearly the same altitude",
+        "from": "2026-09-30",
+        "to": "2026-10-14",
+        "precision": "day"
+      },
+      "beside": null,
+      "closest": null,
+      "left": null,
+      "quote": "policymakers should assume Cosmos 2612 could take an action that threatens the commercial satellite",
+      "note": "Data via COMSPOC. In May five of the six satellites raised their inclination to match ICEYE-X36's plane, and none then manoeuvred to stay in it."
+    },
+    {
+      "source": "analyst",
+      "ref": "Marco Langbroek, \"KOSMOS 2612 and ICEYE-X36: a worrisome cat-and-mouse-game in Space\", SatTrackCam Leiden, 17 October 2026, updated to 21 October",
+      "url": "https://sattrackcam.blogspot.com/2026/10/kosmos-2612-and-iceye-x36-worrisome-cat.html",
+      "statedOn": "2026-10-17",
+      "chaser": {
+        "catalogueNumber": 68762,
+        "name": "Cosmos 2612"
+      },
+      "target": {
+        "catalogueNumber": 59103,
+        "name": "ICEYE-X36"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": {
+        "stated": "manoeuvres of 30 September, 12, 15 and 16 October synchronised orbital altitude, eccentricity and orbital period",
+        "from": "2026-10-12",
+        "to": "2026-10-16",
+        "precision": "day"
+      },
+      "beside": {
+        "stated": "on 17 October 18:15 UTC within 1-2 km of each other",
+        "from": "2026-10-16",
+        "to": "2026-10-17",
+        "precision": "day"
+      },
+      "closest": {
+        "stated": "close approach early on the 18th, possibly around 1:35 UTC, to within a few hundred meters or possibly (much) closer",
+        "km": 0.3,
+        "on": "2026-10-18",
+        "precision": "day"
+      },
+      "left": {
+        "stated": "manoeuvre around 12:26 UTC on 18 October; about 480 km apart on 21 October",
+        "from": "2026-10-18",
+        "to": "2026-10-18",
+        "precision": "day"
+      },
+      "quote": "This RPO (Rendezvous and Proximity Operation) is completely non-consensual.",
+      "note": "The update of 21 October reads a manoeuvre late on 19 October back toward ICEYE-X36's altitude: it may not be done. No disturbance seen in ICEYE-X36's elements."
+    },
+    {
+      "source": "analyst",
+      "ref": "Jonathan McDowell on X, 17 October 2026",
+      "url": "https://x.com/planet4589/status/2111501770870698398",
+      "statedOn": "2026-10-17",
+      "chaser": {
+        "catalogueNumber": 68762,
+        "name": "Cosmos 2612"
+      },
+      "target": {
+        "catalogueNumber": 59103,
+        "name": "ICEYE-X36"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": {
+        "stated": "a manoeuvre on 16 October; now stationkeeping within 5 km or less of ICEYE X36",
+        "from": "2026-10-16",
+        "to": "2026-10-16",
+        "precision": "day"
+      },
+      "closest": {
+        "stated": "within 5 km or less",
+        "km": 5,
+        "on": "2026-10-17",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "New TLEs show that K2612 made a manuever on Oct 16 and is now stationkeeping within 5 km or less of ICEYE X36.",
+      "note": "\"To my knowledge this is the first LEO rendezvous of two active satellites where the owner of one of the sats did not give approval.\""
+    },
+    {
+      "source": "tracker",
+      "ref": "LeoLabs, statement to Axios, \"Russia nears U.S. satellite, raising alarm about intent\", 17 October 2026",
+      "url": "https://www.axios.com/2026/10/17/russia-ukraine-satellite-space",
+      "statedOn": "2026-10-17",
+      "chaser": {
+        "catalogueNumber": 68762,
+        "name": "Cosmos 2612"
+      },
+      "target": {
+        "catalogueNumber": 59103,
+        "name": "ICEYE-X36"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": {
+        "stated": "roughly three miles (about 5 km) apart on Friday afternoon, 16 October, after more than 200 miles (320 km) a day earlier",
+        "from": "2026-10-16",
+        "to": "2026-10-16",
+        "precision": "day"
+      },
+      "closest": {
+        "stated": "roughly three miles",
+        "km": 5,
+        "on": "2026-10-16",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "appears to be a deliberate approach toward",
+      "note": "\"While the intent remains uncertain, the behavior warrants continued monitoring.\""
+    },
+    {
+      "source": "tracker",
+      "ref": "LeoLabs event report, as reported by Rachel Jewett, \"Russian Satellite Maneuvered Within Extreme Proximity of ICEYE Satellite, LeoLabs Reports\", Via Satellite, 19 October 2026",
+      "url": "https://www.satellitetoday.com/government-military/2026/10/19/russian-satellite-maneuvered-within-extreme-proximity-of-iceye-satellite-leolabs-reports/",
+      "statedOn": "2026-10-19",
+      "chaser": {
+        "catalogueNumber": 68762,
+        "name": "Cosmos 2612"
+      },
+      "target": {
+        "catalogueNumber": 59103,
+        "name": "ICEYE-X36"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": {
+        "stated": "began moving closer on 15 October, from about 400 km to about 210 km; within 2 to 3 km on 16 October",
+        "from": "2026-10-16",
+        "to": "2026-10-16",
+        "precision": "day"
+      },
+      "closest": {
+        "stated": "within roughly 500 meters",
+        "km": 0.5,
+        "on": "2026-10-18",
+        "precision": "day"
+      },
+      "left": {
+        "stated": "began moving away on October 18 and 19",
+        "from": "2026-10-18",
+        "to": "2026-10-19",
+        "precision": "day"
+      },
+      "quote": "The latest observations show the spacecraft strongly diverging and confirm that the close-proximity activity had ended.",
+      "note": "The day of the 500 m pass is not stated in the report; 18 October by the other sources. Adam Marsh, LeoLabs: \"the most advanced and potentially dangerous uncooperative RPO we've observed\"."
+    },
+    {
+      "source": "analyst",
+      "ref": "Orbinauts, \"The Russian satellite that flew 5 km behind an ICEYE radar satellite has manoeuvred away from it\", 19 October 2026, from Space-Track's element sets run through SGP4",
+      "url": "https://orbinauts.com/news/the-russian-satellite-behind-an-iceye-radar-satellite-is-drifting-away/",
+      "statedOn": "2026-10-19",
+      "chaser": {
+        "catalogueNumber": 68762,
+        "name": "Cosmos 2612"
+      },
+      "target": {
+        "catalogueNumber": 59103,
+        "name": "ICEYE-X36"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "on 12 October it comes back down to ICEYE-X36's height and takes its tilt; by the next day the planes are about 0.002 degrees apart",
+        "from": "2026-10-12",
+        "to": "2026-10-13",
+        "precision": "day",
+        "how": "manoeuvre",
+        "separationDeg": 0.002
+      },
+      "height": {
+        "stated": "comes back down to about 543 km, ICEYE-X36's height, on 12 October; both orbits at an eccentricity of about 0.00047 by its evening",
+        "from": "2026-10-12",
+        "to": "2026-10-12",
+        "precision": "day"
+      },
+      "beside": {
+        "stated": "climbs back on 16 October, matching ICEYE-X36's height, 3.4 km away; on 17 October its orbit takes almost exactly as long",
+        "from": "2026-10-16",
+        "to": "2026-10-16",
+        "precision": "day"
+      },
+      "closest": {
+        "stated": "0.8 km on 17 October",
+        "km": 0.8,
+        "on": "2026-10-17",
+        "precision": "day"
+      },
+      "left": {
+        "stated": "raises its orbit 2.3 km between 12:25 and 23:34 UTC on 18 October; 360 km behind at 12:00 UTC on 19 October",
+        "from": "2026-10-18",
+        "to": "2026-10-18",
+        "precision": "day"
+      },
+      "quote": "Cosmos 2612's manoeuvres from May to 16 October matched ICEYE-X36's orbit one element at a time: the tilt in May, the plane, the height and the shape between 30 September and 12 October, and the position along the orbit on 15 and 16 October.",
+      "note": "The first plane match was 16 May 2026 (the tilt raised in two steps to 97.85 degrees, the planes 0.05 degrees apart); the planes had drifted to 0.23 degrees apart by 30 September."
+    },
+    {
+      "source": "tracker",
+      "ref": "COMSPOC on X, \"Russian satellites approaching ICEYE: a closer look at the timeline\", 15 July 2026",
+      "url": "https://x.com/COMSPOC_OPS/status/2077469954027532744",
+      "statedOn": "2026-07-15",
+      "chaser": {
+        "catalogueNumber": 68763,
+        "name": "Cosmos 2613"
+      },
+      "target": {
+        "catalogueNumber": 59103,
+        "name": "ICEYE-X36"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "May 15: Cosmos 2613 raises its inclination",
+        "from": "2026-05-15",
+        "to": "2026-05-15",
+        "precision": "day",
+        "how": "manoeuvre",
+        "separationDeg": null
+      },
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "May 17: Cosmos 2613 passes ICEYE-X36 at 3.86 km, then 4.73 km",
+        "km": 3.86,
+        "on": "2026-05-17",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "May 17 Cosmos 2613 passes ICEYE-X36 at 3.86 km, then 4.73 km",
+      "note": "A pass, not a hold: the satellites are phased out along the orbit. KeepTrack lists later passes of 3.4 km on 24 July and 3.7 km on 20 September 2026, and its plane 0.12 degrees from ICEYE-X36's after the burn."
+    },
+    {
+      "source": "tracker",
+      "ref": "COMSPOC on X, \"Russian satellites approaching ICEYE: a closer look at the timeline\", 15 July 2026",
+      "url": "https://x.com/COMSPOC_OPS/status/2077469954027532744",
+      "statedOn": "2026-07-15",
+      "chaser": {
+        "catalogueNumber": 68754,
+        "name": "Cosmos 2609"
+      },
+      "target": {
+        "catalogueNumber": 59103,
+        "name": "ICEYE-X36"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "May 26: Cosmos 2609 passes ICEYE-X36 at 2.54 km",
+        "km": 2.54,
+        "on": "2026-05-26",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "May 26 Cosmos 2609 passes ICEYE-X36 at 2.54 km",
+      "note": "Cosmos 2609 flies at 98.25 degrees, in another plane: a crossing pass, no plane match. CSIS: \"Cosmos 2609 came closest, at 2.5 km\"."
+    },
+    {
+      "source": "tracker",
+      "ref": "COMSPOC on X, \"Russian satellites approaching ICEYE: a closer look at the timeline\", 15 July 2026",
+      "url": "https://x.com/COMSPOC_OPS/status/2077469954027532744",
+      "statedOn": "2026-07-15",
+      "chaser": {
+        "catalogueNumber": 68764,
+        "name": "Cosmos 2614"
+      },
+      "target": {
+        "catalogueNumber": 59103,
+        "name": "ICEYE-X36"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "May 21 onward: Cosmos 2614 raises its inclination about 0.82 degrees",
+        "from": "2026-05-20",
+        "to": "2026-05-22",
+        "precision": "day",
+        "how": "manoeuvre",
+        "separationDeg": 0.6
+      },
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "May 29: Cosmos 2614 passes ICEYE-X36 at 16 km, then 46.8 km",
+        "km": 16,
+        "on": "2026-05-29",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "May 29 Cosmos 2614 passes ICEYE-X36 at 16 km, then 46.8 km",
+      "note": "KeepTrack reads its plane 0.6 degrees from ICEYE-X36's after the burn, and passes of 7.6 km on 12 May, 12.9 km on 29 May and 9.3 km on 16 August 2026."
+    },
+    {
+      "source": "tracker",
+      "ref": "Integrity ISR (Greg Gillinger), press release, 22 May 2026",
+      "url": "https://www.einpresswire.com/shareable-preview/WbtYuKA4PltB6dHexnjZow",
+      "statedOn": "2026-05-22",
+      "chaser": {
+        "catalogueNumber": 68758,
+        "name": "Cosmos 2610"
+      },
+      "target": {
+        "catalogueNumber": 59103,
+        "name": "ICEYE-X36"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "Cosmos 2610 to 2614 raised their inclination from 97.0 to 97.8 degrees between 14 and 20 May 2026, matching ICEYE-X36",
+        "from": "2026-05-14",
+        "to": "2026-05-16",
+        "precision": "day",
+        "how": "manoeuvre",
+        "separationDeg": 0.03
+      },
+      "height": {
+        "stated": "altitude about 547 km, within 2.5 km of ICEYE-X36",
+        "from": "2026-05-14",
+        "to": "2026-05-20",
+        "precision": "day"
+      },
+      "beside": null,
+      "closest": {
+        "stated": "KeepTrack: 10.8 km on 30 September 2026",
+        "km": 10.8,
+        "on": "2026-09-30",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "These five Russian satellites are now effectively co-planar with ICEYE-X36.",
+      "note": "KeepTrack's burn window for Cosmos 2610 is 14 to 16 May, its plane within 0.03 degrees afterwards; the 10.8 km pass is KeepTrack's reading, not Integrity ISR's."
+    },
+    {
+      "source": "tracker",
+      "ref": "Integrity ISR (Greg Gillinger), press release, 22 May 2026",
+      "url": "https://www.einpresswire.com/shareable-preview/WbtYuKA4PltB6dHexnjZow",
+      "statedOn": "2026-05-22",
+      "chaser": {
+        "catalogueNumber": 68759,
+        "name": "Cosmos 2611"
+      },
+      "target": {
+        "catalogueNumber": 59103,
+        "name": "ICEYE-X36"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "Cosmos 2610 to 2614 raised their inclination from 97.0 to 97.8 degrees between 14 and 20 May 2026, matching ICEYE-X36",
+        "from": "2026-05-19",
+        "to": "2026-05-21",
+        "precision": "day",
+        "how": "manoeuvre",
+        "separationDeg": 0.6
+      },
+      "height": {
+        "stated": "altitude about 547 km, within 2.5 km of ICEYE-X36",
+        "from": "2026-05-14",
+        "to": "2026-05-20",
+        "precision": "day"
+      },
+      "beside": null,
+      "closest": {
+        "stated": "KeepTrack: 12.8 km on 16 August 2026",
+        "km": 12.8,
+        "on": "2026-08-16",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "These five Russian satellites are now effectively co-planar with ICEYE-X36.",
+      "note": "KeepTrack's burn window for Cosmos 2611 is 19 to 21 May, its plane 0.6 degrees from ICEYE-X36's afterwards and converging on ICEYE-X37's."
+    },
+    {
+      "source": "analyst",
+      "ref": "Marco Langbroek, \"Close encounters of the classified kind\", The Space Review, 3 July 2017",
+      "url": "https://thespacereview.com/article/3277/1",
+      "statedOn": "2017-07-03",
+      "chaser": {
+        "catalogueNumber": 42689,
+        "name": "USA 276"
+      },
+      "target": {
+        "catalogueNumber": 25544,
+        "name": "ISS"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "closest approach on 3 June 2017 at 14:01:52 UT, 6.4 plus or minus 2 km",
+        "km": 6.4,
+        "on": "2017-06-03",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "I am more and more inclined to think it was intentional",
+      "note": "A flyby, not a hold: \"USA 276 was not actively maneuvering around the ISS\". Ted Molczan read 4.5 km."
+    },
+    {
+      "source": "operator",
+      "ref": "Astroscale, \"Historic approach to space debris: Astroscale's ADRAS-J closes in by 50 meters\", 14 June 2024",
+      "url": "https://www.astroscale.com/en/news/historic-approach-to-space-debris-astroscales-adras-j-closes-in-by-50-meters",
+      "statedOn": "2024-06-14",
+      "chaser": {
+        "catalogueNumber": 58992,
+        "name": "ADRAS-J"
+      },
+      "target": {
+        "catalogueNumber": 33500,
+        "name": "H-2A F15 stage 2"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "launched 18 February 2024 14:52 UTC into the stage's plane",
+        "from": "2024-02-18",
+        "to": "2024-02-18",
+        "precision": "day",
+        "how": "launch",
+        "separationDeg": null
+      },
+      "height": null,
+      "beside": {
+        "stated": "within several hundred metres on 17 April 2024; fixed-point hold at 50 m on 23 May 2024",
+        "from": "2024-04-17",
+        "to": "2024-04-17",
+        "precision": "day"
+      },
+      "closest": {
+        "stated": "50 m fixed-point approach on 23 May 2024",
+        "km": 0.05,
+        "on": "2024-05-23",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "closes in by 50 meters",
+      "note": "A cooperative demonstration with JAXA, the stage's owner."
+    },
+    {
+      "source": "operator",
+      "ref": "Astroscale, \"Astroscale's ADRAS-J achieves historic 15-meter approach to space debris\", 11 December 2024",
+      "url": "https://astroscale.com/en/news/astroscales-adras-j-achieves-historic-15-meter-approach-to-space-debris",
+      "statedOn": "2024-12-11",
+      "chaser": {
+        "catalogueNumber": 58992,
+        "name": "ADRAS-J"
+      },
+      "target": {
+        "catalogueNumber": 33500,
+        "name": "H-2A F15 stage 2"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": null,
+      "closest": {
+        "stated": "15 m approach on 30 November 2024",
+        "km": 0.015,
+        "on": "2024-11-30",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "historic 15-meter approach",
+      "note": "The fly-around at 50 m begun on 19 June 2024 was aborted by an attitude anomaly."
+    },
+    {
+      "source": "news",
+      "ref": "Alan Boyle, \"Starfish sets sights on new target for satellite docking\", Cosmic Log, 20 May 2026",
+      "url": "https://cosmiclog.com/2026/05/20/starfish-sets-sights-on-new-target-for-satellite-docking/",
+      "statedOn": "2026-05-20",
+      "chaser": {
+        "catalogueNumber": 64537,
+        "name": "Otter Pup 2"
+      },
+      "target": {
+        "catalogueNumber": 64539,
+        "name": "Elara 1 (ElaraSat)"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "launched together on Transporter-14, 23 June 2025",
+        "from": "2025-06-23",
+        "to": "2025-06-23",
+        "precision": "day",
+        "how": "launch",
+        "separationDeg": null
+      },
+      "height": null,
+      "beside": null,
+      "closest": null,
+      "left": null,
+      "quote": "Starfish sets sights on new target for satellite docking",
+      "note": "Starfish Space later said the acquisition phase was complete, holding within about 1 km of ElaraSat, on a day not found; no docking confirmed by 21 October 2026. Same launch."
+    },
+    {
+      "source": "analyst",
+      "ref": "Jonathan McDowell, \"Nivelir\" timeline, planet4589.org",
+      "url": "https://www.planet4589.org/space/plots/niv/index.html",
+      "statedOn": "2025-04-28",
+      "chaser": {
+        "catalogueNumber": 44835,
+        "name": "Kosmos 2543"
+      },
+      "target": {
+        "catalogueNumber": 44797,
+        "name": "Kosmos 2542"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "deployed from Kosmos 2542 on 6 December 2019",
+        "from": "2019-12-06",
+        "to": "2019-12-06",
+        "precision": "day",
+        "how": "manoeuvre",
+        "separationDeg": 0
+      },
+      "height": null,
+      "beside": {
+        "stated": "station-keeping with 2542 (2019 Dec 6-9)",
+        "from": "2019-12-06",
+        "to": "2019-12-09",
+        "precision": "day"
+      },
+      "closest": null,
+      "left": {
+        "stated": "station-keeping with 2542 (2019 Dec 6-9)",
+        "from": "2019-12-09",
+        "to": "2019-12-09",
+        "precision": "day"
+      },
+      "quote": "station-keeping with 2542 (2019 Dec 6-9); close passes with USA 245 (2019 Dec-2020 Jan)",
+      "note": "Same launch and same mission: a subsatellite released by its carrier."
+    },
+    {
+      "source": "analyst",
+      "ref": "Jonathan McDowell, \"Nivelir\" timeline, planet4589.org",
+      "url": "https://www.planet4589.org/space/plots/niv/index.html",
+      "statedOn": "2025-04-28",
+      "chaser": {
+        "catalogueNumber": 44835,
+        "name": "Kosmos 2543"
+      },
+      "target": {
+        "catalogueNumber": 44421,
+        "name": "Kosmos 2535"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": {
+        "stated": "rendezvous with K-2535 (2020 Jun)",
+        "from": "2020-06-01",
+        "to": "2020-06-30",
+        "precision": "month"
+      },
+      "closest": null,
+      "left": {
+        "stated": "ejected Kosmos-2547? (2020 Jul 15); close passes with K-2535 (2021 Jul-Aug); perigee lowered, possibly retired (2021 Sep 3)",
+        "from": "2021-09-03",
+        "to": "2021-09-03",
+        "precision": "day"
+      },
+      "quote": "rendezvous with K-2535 (2020 Jun); ejected Kosmos-2547? (2020 Jul 15); close passes with K-2535 (2021 Jul-Aug)",
+      "note": "Hendrickx: in July 2020 the ejected object changed Kosmos 2535's perigee by about 100 km and its apogee by almost 170 km. Gunter's Space Page: in May 2020 Kosmos 2543 adjusted its orbit to fly in formation with Kosmos 2535."
+    },
+    {
+      "source": "analyst",
+      "ref": "Jonathan McDowell, \"Nivelir\" timeline, planet4589.org",
+      "url": "https://www.planet4589.org/space/plots/niv/index.html",
+      "statedOn": "2025-04-28",
+      "chaser": {
+        "catalogueNumber": 44424,
+        "name": "Kosmos 2536"
+      },
+      "target": {
+        "catalogueNumber": 44421,
+        "name": "Kosmos 2535"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "launched together on 10 July 2019",
+        "from": "2019-07-10",
+        "to": "2019-07-10",
+        "precision": "day",
+        "how": "launch",
+        "separationDeg": 0
+      },
+      "height": null,
+      "beside": {
+        "stated": "rendezvous Jul-Oct 2019 (a servicing experiment), Dec 2019-Jan 2020; docked with 2535? 20 Aug 2020; undocked? 12 Oct 2020; rendezvous 11 Mar 2021",
+        "from": "2019-07-10",
+        "to": "2019-07-31",
+        "precision": "month"
+      },
+      "closest": {
+        "stated": "docked with 2535? (2020 Aug 20)",
+        "km": 0,
+        "on": "2020-08-20",
+        "precision": "day"
+      },
+      "left": {
+        "stated": "departed 12 Apr 2021; 2536 perigee lowered 14 Sep 2021",
+        "from": "2021-04-12",
+        "to": "2021-04-12",
+        "precision": "day"
+      },
+      "quote": "docked with 2535? (2020 Aug 20); undocked? (2020 Oct 12)",
+      "note": "Same launch. Several visits over two years; typed as one case with its first arrival."
+    },
+    {
+      "source": "analyst",
+      "ref": "Jonathan McDowell, \"Nivelir\" timeline, planet4589.org, and Bart Hendrickx, The Space Review, 28 April 2025",
+      "url": "https://www.planet4589.org/space/plots/niv/index.html",
+      "statedOn": "2025-04-28",
+      "chaser": {
+        "catalogueNumber": 42919,
+        "name": "Kosmos 2521"
+      },
+      "target": {
+        "catalogueNumber": 42798,
+        "name": "Kosmos 2519"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "ejected from Kosmos 2519 on 23 August 2017",
+        "from": "2017-08-23",
+        "to": "2017-08-23",
+        "precision": "day",
+        "how": "manoeuvre",
+        "separationDeg": 0
+      },
+      "height": null,
+      "beside": {
+        "stated": "re-approach to about 10 km by 11 October 2017, 2 km by 18 October",
+        "from": "2017-10-11",
+        "to": "2017-10-18",
+        "precision": "day"
+      },
+      "closest": {
+        "stated": "2 km by 18 October 2017",
+        "km": 2,
+        "on": "2017-10-18",
+        "precision": "day"
+      },
+      "left": {
+        "stated": "Kosmos 2519 made a 7 km flyby of 2521 on 15 December 2017; 2521 a 24 km flyby on 26 March 2018",
+        "from": "2017-12-15",
+        "to": "2017-12-15",
+        "precision": "day"
+      },
+      "quote": "re-approach to ~10 km by 11 Oct, 2 km by 18 Oct",
+      "note": "Same launch (23 June 2017). Kosmos 2523 was ejected from 2521 on 30 October 2017 at 27 m/s."
+    },
+    {
+      "source": "analyst",
+      "ref": "Marco Langbroek, \"RPO Galore: complex proximity operations by Russian satellites\", SatTrackCam Leiden, 29 June 2025",
+      "url": "https://sattrackcam.blogspot.com/2025/06/rpo-galore-complex-proximity-operations.html",
+      "statedOn": "2025-06-29",
+      "chaser": {
+        "catalogueNumber": 62903,
+        "name": "Kosmos 2582"
+      },
+      "target": {
+        "catalogueNumber": 62902,
+        "name": "Kosmos 2581"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "launched together on 5 February 2025 03:59 UTC",
+        "from": "2025-02-05",
+        "to": "2025-02-05",
+        "precision": "day",
+        "how": "launch",
+        "separationDeg": 0
+      },
+      "height": {
+        "stated": "2582 raised its orbit on 15 February, 2581 on 19 February; 2582 lowered to match 2581 on 24 February",
+        "from": "2025-02-24",
+        "to": "2025-02-24",
+        "precision": "day"
+      },
+      "beside": {
+        "stated": "very close approach (1 km or less) on 24 February around 21:44 UTC",
+        "from": "2025-02-24",
+        "to": "2025-02-24",
+        "precision": "day"
+      },
+      "closest": {
+        "stated": "very close approach (1 km or less) on 24 February around 21:44 UTC",
+        "km": 1,
+        "on": "2025-02-24",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "one of the most complex RPO exercises Russia has been conducting in LEO in decades",
+      "note": "Same launch. On 23 June 2025 Kosmos 2582 was again within kilometres of the pair; on 28 June 2581 and 2582 were 1.2 km apart."
+    },
+    {
+      "source": "analyst",
+      "ref": "Marco Langbroek, \"RPO Galore: complex proximity operations by Russian satellites\", SatTrackCam Leiden, 29 June 2025",
+      "url": "https://sattrackcam.blogspot.com/2025/06/rpo-galore-complex-proximity-operations.html",
+      "statedOn": "2025-06-29",
+      "chaser": {
+        "catalogueNumber": 62904,
+        "name": "Kosmos 2583"
+      },
+      "target": {
+        "catalogueNumber": 62902,
+        "name": "Kosmos 2581"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "launched together on 5 February 2025 03:59 UTC",
+        "from": "2025-02-05",
+        "to": "2025-02-05",
+        "precision": "day",
+        "how": "launch",
+        "separationDeg": 0
+      },
+      "height": null,
+      "beside": {
+        "stated": "on 10 June around 09:42 UTC Kosmos 2583 came within a few hundred metres or less of 2581, and again around 19 June",
+        "from": "2025-06-10",
+        "to": "2025-06-10",
+        "precision": "day"
+      },
+      "closest": {
+        "stated": "a few hundred meters or less",
+        "km": 0.3,
+        "on": "2025-06-10",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "a few hundred meters or less",
+      "note": "Same launch. Kosmos 2583 released Object F (63330) on 18 March 2025 and moved to and from it in April and May; on 28 June 2583 and 2581 were 3.6 km apart."
+    },
+    {
+      "source": "analyst",
+      "ref": "Anatoly Zak, \"Kosmos-2499\", RussianSpaceWeb, and Jonathan McDowell, \"Nivelir\" timeline",
+      "url": "https://www.russianspaceweb.com/kosmos-2499.html",
+      "statedOn": "2014-11-29",
+      "chaser": {
+        "catalogueNumber": 39765,
+        "name": "Kosmos 2499"
+      },
+      "target": {
+        "catalogueNumber": 39764,
+        "name": "Briz-KM stage of its launch"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "launched together on 23 May 2014",
+        "from": "2014-05-23",
+        "to": "2014-05-23",
+        "precision": "day",
+        "how": "launch",
+        "separationDeg": 0
+      },
+      "height": null,
+      "beside": {
+        "stated": "approached its Briz-KM stage to 526 m at 0.064 m/s on 25 November 2014",
+        "from": "2014-11-25",
+        "to": "2014-11-25",
+        "precision": "day"
+      },
+      "closest": {
+        "stated": "526 m",
+        "km": 0.526,
+        "on": "2014-11-25",
+        "precision": "day"
+      },
+      "left": {
+        "stated": "climbed above the stage on 29 November 2014",
+        "from": "2014-11-29",
+        "to": "2014-11-29",
+        "precision": "day"
+      },
+      "quote": "526 m at 0.064 m/s",
+      "note": "Same launch: a chaser rendezvousing with its own rocket stage. The page's date is approximate."
+    },
+    {
+      "source": "operator",
+      "ref": "Astroscale, ELSA-d magnetic capture demonstration, as reported by Via Satellite, 26 August 2021",
+      "url": null,
+      "statedOn": "2021-08-26",
+      "chaser": {
+        "catalogueNumber": 47944,
+        "name": "ELSA-d chaser"
+      },
+      "target": {
+        "catalogueNumber": 51288,
+        "name": "ELSA-d client"
+      },
+      "regime": "LEO",
+      "plane": {
+        "stated": "launched together on 22 March 2021",
+        "from": "2021-03-22",
+        "to": "2021-03-22",
+        "precision": "day",
+        "how": "launch",
+        "separationDeg": 0
+      },
+      "height": null,
+      "beside": {
+        "stated": "magnetic capture and release demonstration on 25 August 2021",
+        "from": "2021-08-25",
+        "to": "2021-08-25",
+        "precision": "day"
+      },
+      "closest": {
+        "stated": "captured",
+        "km": 0,
+        "on": "2021-08-25",
+        "precision": "day"
+      },
+      "left": null,
+      "quote": "magnetic capture",
+      "note": "Same launch and same owner; the target's catalogue number is the chaser's launch-mate and is to be checked against the catalogue."
+    },
+    {
+      "source": "operator",
+      "ref": "Starfish Space, \"Starfish Space executes rendezvous between Otter Pup and D-Orbit's ION, a finale for the Otter Pup mission\", press release, 7 May 2024",
+      "url": "https://www.starfishspace.com/press-release/starfish-space-executes-rendezvous-between-otter-pup-and-d-orbits-ion-a-finale-for-the-otter-pup-mission/",
+      "statedOn": "2024-05-07",
+      "chaser": {
+        "catalogueNumber": 52761,
+        "name": "ION SCV006 (D-Orbit)"
+      },
+      "target": {
+        "catalogueNumber": 56933,
+        "name": "Otter Pup"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": {
+        "stated": "a series of maneuvers in mid-April 2024 brought the two within a kilometre; it was up to ION to do all of the orbital maneuvering",
+        "from": "2024-04-10",
+        "to": "2024-04-20",
+        "precision": "month"
+      },
+      "closest": {
+        "stated": "as close as 1 km in mid-April 2024; an image of ION on 19 April from about 3 km",
+        "km": 1,
+        "on": "2024-04-15",
+        "precision": "month"
+      },
+      "left": null,
+      "quote": "as close as 1 km",
+      "note": "A cooperative rendezvous: Otter Pup, which had tumbled after its deployment from the ION in June 2023, was the target and D-Orbit's ION the one that manoeuvred. The detector's replay raised a hold on the pair from 1 March 2024, before the announcement; the truth row was added on reading that hold."
+    },
+    {
+      "source": "news",
+      "ref": "Alan Boyle, \"Starfish Space's Otter Pup satellite achieves rendezvous with D-Orbit spacecraft\", GeekWire, 7 May 2024",
+      "url": "https://www.geekwire.com/2024/starfish-satellite-rendezvous-d-orbit/",
+      "statedOn": "2024-05-07",
+      "chaser": {
+        "catalogueNumber": 52761,
+        "name": "ION SCV006 (D-Orbit)"
+      },
+      "target": {
+        "catalogueNumber": 56933,
+        "name": "Otter Pup"
+      },
+      "regime": "LEO",
+      "plane": null,
+      "height": null,
+      "beside": {
+        "stated": "came within a kilometer (0.6 mile) of ION during a series of maneuvers in mid-April",
+        "from": "2024-04-10",
+        "to": "2024-04-20",
+        "precision": "month"
+      },
+      "closest": {
+        "stated": "within a kilometer",
+        "km": 1,
+        "on": "2024-04-15",
+        "precision": "month"
+      },
+      "left": null,
+      "quote": "The close encounter wasn't as close as the original test plan called for, and it was up to ION to do all of the orbital maneuvering.",
+      "note": null
+    }
+  ]
+}
