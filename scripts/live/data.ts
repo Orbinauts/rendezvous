@@ -27,12 +27,12 @@ import { gunzipSync, gzipSync } from "node:zlib";
 export const DATA_TAG = "live-data";
 const repository = (): string => process.env.GH_REPO ?? "Orbinauts/rendezvous";
 
-/** The assets, by name in the release, and the file each is under the run's directory. */
+/** The assets, by name in the release, and the file each is under the run's directory; an uploaded asset takes its file's name, so the packed GCAT tables are written under the asset's name. */
 export const ASSETS: Record<string, string> = {
   "states.json.gz": "states.json.gz",
   "states.provenance.txt": "states.provenance.txt",
-  "gcat-satcat.tsv.gz": "gcat/satcat.tsv.gz",
-  "gcat-orgs.tsv.gz": "gcat/orgs.tsv.gz",
+  "gcat-satcat.tsv.gz": "gcat-satcat.tsv.gz",
+  "gcat-orgs.tsv.gz": "gcat-orgs.tsv.gz",
   "gcat.json": "gcat/gcat.json",
 };
 
@@ -86,12 +86,12 @@ function releasedManifest(): DataManifest | null {
 function packGcat(home: string): void {
   for (const name of ["satcat.tsv", "orgs.tsv"]) {
     const plain = join(home, "gcat", name);
-    if (existsSync(plain)) writeFileSync(`${plain}.gz`, gzipSync(readFileSync(plain)));
+    if (existsSync(plain)) writeFileSync(join(home, `gcat-${name}.gz`), gzipSync(readFileSync(plain)));
   }
 }
 function unpackGcat(home: string): void {
   for (const name of ["satcat.tsv", "orgs.tsv"]) {
-    const packed = join(home, "gcat", `${name}.gz`);
+    const packed = join(home, `gcat-${name}.gz`);
     if (existsSync(packed)) writeFileSync(join(home, "gcat", name), gunzipSync(readFileSync(packed)));
   }
 }
@@ -121,9 +121,11 @@ export function upload(home: string, now = Date.now()): void {
   const local = manifestOf(home, now);
   if (local.assets["states.json.gz"] === undefined) throw new Error(`no states to upload under ${home}`);
   const released = releasedManifest();
-  const names = toUpload(local, released);
   let exists = true;
-  try { gh(["release", "view", DATA_TAG, "--repo", repository()]); } catch { exists = false; }
+  let present: string[] = [];
+  try { present = (JSON.parse(gh(["release", "view", DATA_TAG, "--repo", repository(), "--json", "assets"])) as { assets: { name: string }[] }).assets.map((a) => a.name); } catch { exists = false; }
+  // What the manifest names with another hash, and what the release lacks whatever the manifest says.
+  const names = [...new Set([...toUpload(local, released), ...Object.keys(local.assets).filter((name) => !present.includes(name))])];
   if (!exists) gh(["release", "create", DATA_TAG, "--repo", repository(), "--title", "The live run's data", "--notes", "The frozen detector's states at the end of the last hourly run, the GCAT snapshot it names objects from, and a manifest of hashes. Replaced by every run; not for reading by hand.", "--prerelease"]);
   for (const name of names) {
     gh(["release", "upload", DATA_TAG, join(home, ASSETS[name]!), "--repo", repository(), "--clobber"]);
