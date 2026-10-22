@@ -1,0 +1,47 @@
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      # The published files live on the orphan branch `published`, under v1/; the site is that directory with an index naming the files.
+      - uses: actions/checkout@v4
+        with:
+          ref: published
+          path: published
+          persist-credentials: false
+        continue-on-error: true
+      - run: |
+          mkdir -p site
+          if [ -d published/v1 ]; then cp -r published/v1 site/v1; fi
+          cp docs/published.md site/index.md
+          printf '<!doctype html><meta charset="utf-8"><title>Orbinauts rendezvous</title><p>The published rendezvous: <a href="v1/rendezvous.json">v1/rendezvous.json</a>, <a href="v1/status.json">v1/status.json</a>. See <a href="https://github.com/Orbinauts/rendezvous/blob/main/docs/published.md">docs/published.md</a>.' > site/index.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
