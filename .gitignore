@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+package-lock.json
+# Where the scorecard keeps each span's replay; only the aggregate kpi/latest.{json,md} is committed.
+kpi/work/
+
+# Claude
+.claude
+.agents
+skills-lock.json
+CLAUDE.md
+# The replays' verdict files are hundreds of megabytes; the tables beside them are committed, and `npm run replay` makes the files again.
+docs/replay/*.json

@@ -1,0 +1,42 @@
+{
+  "name": "@orbinauts/rendezvous",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Detection of one satellite moving onto another's orbit and holding beside it, from public orbital data alone, in TypeScript, scored against a ground truth of public rendezvous since 2014",
+  "keywords": ["satellite", "rendezvous", "proximity-operations", "tle", "omm", "orbit", "typescript"],
+  "homepage": "https://orbinauts.com",
+  "bugs": "https://github.com/Orbinauts/rendezvous/issues",
+  "repository": { "type": "git", "url": "git+https://github.com/Orbinauts/rendezvous.git" },
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" },
+    "./rendezvous.json": "./data/rendezvous.json",
+    "./exclusions.json": "./data/exclusions.json"
+  },
+  "files": ["dist", "data/rendezvous.json", "data/exclusions.json"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "prepare": "npm run build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.build.json --noEmit",
+    "truth": "node --experimental-strip-types scripts/truth/build-truth.ts",
+    "truth:fetch": "node --experimental-strip-types scripts/truth/fetch-sources.ts",
+    "archive:pull-days": "node --env-file-if-exists=.env --experimental-strip-types scripts/archive/pull-days.ts",
+    "archive:export": "node --max-old-space-size=16384 --experimental-strip-types scripts/archive/export-span.ts",
+    "replay": "node --max-old-space-size=16384 --experimental-strip-types scripts/replay/run.ts",
+    "kpi": "node --max-old-space-size=16384 --experimental-strip-types scripts/kpi/run.ts",
+    "kpi:readme": "node --experimental-strip-types scripts/kpi/pages.ts",
+    "published": "node --experimental-strip-types scripts/published/cli.ts"
+  },
+  "dependencies": {
+    "satellite.js": "^7.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.0"
+  }
+}
