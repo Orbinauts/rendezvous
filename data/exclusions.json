@@ -1,0 +1,19 @@
+{
+  "about": "The pairs the detector leaves out, as data: the brief's exclusions (the same owner, the same launch, a crewed station's visitors, a stack dispersing after launch), a fragment on either side (a fragment is met by nobody but a removal mission, and those meet a rocket body or a dead payload, so a hold beside one is a drift through a debris cloud) and one object under two catalogue numbers. The detector tags every verdict with the exclusion that applies and the published files and the scorecard read the tag. Edit this file, never the rules in src/exclusions.ts.",
+  "stationLaunches": ["1998-067", "1998-069", "2000-037", "2001-006", "2009-060", "2021-066", "2011-053", "2016-057", "2021-035", "2022-085", "2022-143"],
+  "visitorNames": ["^Soyuz", "^Progress", "^Dragon", "^Crew Dragon", "^Cargo Dragon", "^Cygnus", "^S\\.S\\. ", "^Shenzhou", "^Tianzhou", "^HTV", "^Kounotori", "^Starliner", "^CST-100", "^Boeing Starliner"],
+  "dispersingDays": 90,
+  "watchedKinds": ["payload", "rocket body", "component", "unknown"],
+  "ownerGroups": {
+    "OneWeb": ["ONEWEB", "ONEWEBN", "ONEWEBE"],
+    "SpaceX": ["SPX", "SPXS"],
+    "ICEYE": ["ICEYE", "ICEUS"],
+    "Planet": ["PLAN", "PLANG"],
+    "Intelsat": ["INTEL", "INTELD", "INTELU"],
+    "Eutelsat": ["EUTEL", "EUTSA", "EUTAM"],
+    "SES": ["SES", "SESS", "SESSL", "SESSAN"],
+    "Russian defence": ["MORF", "VKS", "VVKO", "VVKOV", "VOENT", "TSVS", "TSKHM", "RVSN", "RVSNR", "GUKOS", "GUKOSR", "PVO", "KVR", "FSB"],
+    "US defence": ["NRO", "NROC", "NRO/NRL", "NRO/SAFSP", "USAF", "USSF", "AFSPC", "AFSMC", "AFMCSW", "AFRL", "AFSSD", "SFSSC", "SDA", "DOD", "USN", "USNPS", "DARPA", "DARPA2", "AFORS", "SAMSO"]
+  },
+  "duplicate": { "withinKm": 1, "heightWithinKm": 0.05 }
+}
