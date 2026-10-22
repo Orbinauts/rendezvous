@@ -6,3 +6,4 @@
 - The replay of step 2: the prototype over five spans since 2020 (`docs/replay/README.md`).
 - The detector `beside-v1`, run set by set: plane, height, beside and left, raised and confirmed; the exclusions as data, with a fragment on either side left out after the scorecard showed eight holds beside debris.
 - The scorecard over the spans of `data/spans.json` (`npm run kpi`), the published files' shape and command (`npm run published`).
+- The live run (`.github/workflows/live.yml`, `npm run live`): the detector frozen at the tag `frozen-beside-v1`, every hour, its verdicts logged on the `live` branch, its holds published on the `published` branch and Pages, seeded from the Archive replayed from 2026-04-06.

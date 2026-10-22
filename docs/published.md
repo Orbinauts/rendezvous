@@ -1,6 +1,6 @@
 # The published rendezvous
 
-The holds this project considers fit to show, as static JSON on its GitHub Pages: a free, read-only API with no server, refreshed by the live run (step 4, not yet running). [Orbinauts](https://orbinauts.com) will read it to show rendezvous instead of detecting them itself. Every rule about what is shown lives here; a reader only fetches the files, compares them with what it already holds and displays them.
+The holds this project considers fit to show, as static JSON on its GitHub Pages: a free, read-only API with no server, refreshed every hour by the live run ([docs/live.md](live.md)). [Orbinauts](https://orbinauts.com) will read it to show rendezvous instead of detecting them itself. Every rule about what is shown lives here; a reader only fetches the files, compares them with what it already holds and displays them.
 
 ## Where to read it
 

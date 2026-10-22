@@ -29,7 +29,14 @@
     "replay": "node --max-old-space-size=16384 --experimental-strip-types scripts/replay/run.ts",
     "kpi": "node --max-old-space-size=16384 --experimental-strip-types scripts/kpi/run.ts",
     "kpi:readme": "node --experimental-strip-types scripts/kpi/pages.ts",
-    "published": "node --experimental-strip-types scripts/published/cli.ts"
+    "published": "node --experimental-strip-types scripts/published/cli.ts",
+    "live": "node --env-file-if-exists=.env --max-old-space-size=8192 --experimental-strip-types scripts/live/run.ts",
+    "live:seed": "node --env-file-if-exists=.env --max-old-space-size=16384 --experimental-strip-types scripts/live/seed.ts",
+    "live:publish": "node --max-old-space-size=8192 --experimental-strip-types scripts/live/publish.ts",
+    "live:issues": "node --experimental-strip-types scripts/live/hold-issues.ts",
+    "live:data": "node --experimental-strip-types scripts/live/data.ts",
+    "live:failure": "node --experimental-strip-types scripts/live/failure-issue.ts",
+    "live:keep-alive": "node --experimental-strip-types scripts/live/keep-alive.ts"
   },
   "dependencies": {
     "satellite.js": "^7.1.0"

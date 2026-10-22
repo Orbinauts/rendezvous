@@ -4,4 +4,5 @@
 - A change to the exclusions is a change to `data/exclusions.json`.
 - A change to the detector or the scorecard lands with the regenerated aggregate (`npm run kpi -- --gcat <dir>` against the local Archive, then `npm run kpi:readme`), as breakups requires; CI checks the aggregate's hashes and never replays.
 - `npm run typecheck` and `npm test` must pass; CI runs them on Node 22 and 24.
+- A change to the detector's rules never reaches the live run until it is scored, tagged and frozen (`scripts/live/frozen.ts`, [docs/live.md](docs/live.md)); a change under `scripts/live/` reaches the next hourly run from main.
 - Written text never uses dashes as punctuation.

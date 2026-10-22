@@ -38,7 +38,13 @@ export interface ReplayResult {
 }
 
 /** Replays the span: each day's sets admitted when they were published (slices of the next two days read ahead and held until then), the detector run once a day over them. */
-export function replaySpan(from: string, to: string, gcat: string, archives: string[], log: (line: string) => void = () => {}): ReplayResult {
+/** The detector the replay runs: this branch's, or the frozen checkout's for the live run's seed. */
+export interface Engine {
+  runDetector: typeof runDetector;
+  newStates: typeof newStates;
+}
+
+export function replaySpan(from: string, to: string, gcat: string, archives: string[], log: (line: string) => void = () => {}, engine: Engine = { runDetector, newStates }): ReplayResult {
   const catalogue = readCatalogue(join(gcat, "satcat.tsv"), join(gcat, "orgs.tsv"));
   const exclusions = readExclusions(JSON.parse(readFileSync(join(ROOT, "data/exclusions.json"), "utf8")));
   const years = new Set<number>();
@@ -48,7 +54,7 @@ export function replaySpan(from: string, to: string, gcat: string, archives: str
     const s = slices(archives, y);
     sources.set(y, s.sets(`${y}-01-15`) !== null || s.sets(from) !== null ? s : yearColumns(archives.find((a) => existsSync(join(a, String(y), "epoch.bin.gz")))!, y));
   }
-  let states = newStates();
+  let states = engine.newStates();
   const verdicts: Verdict[] = [];
   const counted: Record<Exclusion, number> = { "same launch": 0, "same owner": 0, "station visitor": 0, "dispersing stack": 0, fragment: 0, duplicate: 0 };
   let pending: ElementSet[] = [];
@@ -69,7 +75,7 @@ export function replaySpan(from: string, to: string, gcat: string, archives: str
     for (const s of pending) ((s.createdMs ?? s.epochMs) < end ? admitted : kept).push(s);
     pending = kept;
     admitted.sort((a, b) => (a.createdMs ?? a.epochMs) - (b.createdMs ?? b.epochMs) || a.epochMs - b.epochMs);
-    const out = runDetector({ sets: admitted, body: catalogue.body, exclusions }, states);
+    const out = engine.runDetector({ sets: admitted, body: catalogue.body, exclusions }, states);
     states = out.states;
     for (const v of out.verdicts) verdicts.push(v);
     for (const k of Object.keys(counted) as Exclusion[]) counted[k] += out.counted[k];

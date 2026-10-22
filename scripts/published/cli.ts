@@ -26,25 +26,40 @@ function arg(name: string, fallback?: string): string {
 
 const readJson = (path: string): unknown => JSON.parse(path.endsWith(".gz") ? gunzipSync(readFileSync(path)).toString("utf8") : readFileSync(path, "utf8"));
 
-function main(): void {
-  const verdictsPath = arg("verdicts");
-  const gcat = arg("gcat");
-  const out = arg("out");
-  const loaded = readJson(verdictsPath) as { verdicts: Verdict[]; designators?: Record<string, string | null>; setsThrough?: string | null };
-  const designators = loaded.designators ?? {};
+export interface WriteOptions {
+  verdicts: Verdict[];
+  designatorOf: (n: number) => string | null;
+  /** The directory holding GCAT's `satcat.tsv` and `orgs.tsv`. */
+  gcat: string;
+  /** The checkout the files are written into, under `v1/`. */
+  out: string;
+  setsThrough: string | null;
+  now: number;
+  /** The repository whose truth and exclusions are read; this one by default. */
+  root?: string;
+}
+
+/** Writes the published files from verdicts, merging into the list already under `out`; returns a line saying what it wrote. */
+export function writePublished({ verdicts, designatorOf, gcat, out, setsThrough, now, root = ROOT }: WriteOptions): string {
   const catalogue = readCatalogue(join(gcat, "satcat.tsv"), join(gcat, "orgs.tsv"));
-  const truthText = readFileSync(join(ROOT, "data/rendezvous.json"), "utf8");
-  const exclusionsText = readFileSync(join(ROOT, "data/exclusions.json"), "utf8");
+  const truthText = readFileSync(join(root, "data/rendezvous.json"), "utf8");
+  const exclusionsText = readFileSync(join(root, "data/exclusions.json"), "utf8");
   const dir = join(out, `v${PUBLISHED_VERSION}`);
   const listPath = join(dir, "rendezvous.json");
   const previous = existsSync(listPath) ? (JSON.parse(readFileSync(listPath, "utf8")) as PublishedRendezvousFile) : null;
-  const selection = selectPublished(loaded.verdicts, catalogue.body, (n) => designators[String(n)] ?? null, JSON.parse(truthText) as TruthFile, previous);
+  const selection = selectPublished(verdicts, catalogue.body, designatorOf, JSON.parse(truthText) as TruthFile, previous);
   mkdirSync(join(dir, "rendezvous"), { recursive: true });
   writeFileSync(listPath, `${JSON.stringify(selection.list, null, 1)}\n`);
   for (const d of selection.details) writeFileSync(join(dir, "rendezvous", `${d.id}.json`), `${JSON.stringify(d, null, 1)}\n`);
-  const status: PublishedStatusFile = { version: PUBLISHED_VERSION, ranAt: new Date().toISOString(), setsThrough: loaded.setsThrough ?? null, detector: DETECTOR_NAME, truthSha256: createHash("sha256").update(truthText).digest("hex"), exclusionsSha256: createHash("sha256").update(exclusionsText).digest("hex") };
+  const status: PublishedStatusFile = { version: PUBLISHED_VERSION, ranAt: new Date(now).toISOString(), setsThrough, detector: DETECTOR_NAME, truthSha256: createHash("sha256").update(truthText).digest("hex"), exclusionsSha256: createHash("sha256").update(exclusionsText).digest("hex") };
   writeFileSync(join(dir, "status.json"), `${JSON.stringify(status, null, 1)}\n`);
-  console.log(`published ${selection.list.rendezvous.length} rendezvous (${selection.details.length} from this run${selection.dropped.length > 0 ? `, ${selection.dropped.length} withdrawn and dropped` : ""}) to ${dir}`);
+  return `published ${selection.list.rendezvous.length} rendezvous (${selection.details.length} from this run${selection.dropped.length > 0 ? `, ${selection.dropped.length} withdrawn and dropped` : ""}) to ${dir}`;
 }
 
-main();
+function main(): void {
+  const loaded = readJson(arg("verdicts")) as { verdicts: Verdict[]; designators?: Record<string, string | null>; setsThrough?: string | null };
+  const designators = loaded.designators ?? {};
+  console.log(writePublished({ verdicts: loaded.verdicts, designatorOf: (n) => designators[String(n)] ?? null, gcat: arg("gcat"), out: arg("out"), setsThrough: loaded.setsThrough ?? null, now: Date.now() }));
+}
+
+if (process.argv[1] !== undefined && process.argv[1].endsWith("published/cli.ts")) main();

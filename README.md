@@ -66,7 +66,7 @@ for (const c of file.cases.slice(-3)) {
 
 ## Live run
 
-A scheduled job will run the frozen detector every hour on the sets the catalogue published since the last run, log every verdict where its time of logging cannot be changed, and publish the holds fit to show as JSON on this repository's GitHub Pages, as breakups does daily. That is the fourth step of the project and is not built yet; the published files' shape is settled ([docs/published.md](docs/published.md)).
+Every hour, a scheduled job (`.github/workflows/live.yml`) pulls the sets the catalogue published since the last run and reads them through the detector frozen at the tag `frozen-beside-v1`, from the states the last run ended with. Every verdict is logged on the `live` branch, whose commit time is the proof of when it was known, and the holds fit to show are published as JSON on this repository's GitHub Pages ([docs/published.md](docs/published.md)), with an issue for each hold once confirmed. [docs/live.md](docs/live.md) describes the run, its record and how to run it elsewhere.
 
 ## Learn more
 
@@ -74,7 +74,8 @@ A scheduled job will run the frozen detector every hour on the sets the catalogu
 - [The detector](docs/detector.md): every rule and threshold.
 - [The scorecard](kpi/latest.md): every case, every hold raised, and what became of it.
 - [The replay of step 2](docs/replay/README.md): what the first prototype found, day by day, and why the detector is built as it is.
-- [The published files](docs/published.md): the JSON the live run will publish.
+- [The live run](docs/live.md): the hourly run of the frozen detector, its log and its seed.
+- [The published files](docs/published.md): the JSON the live run publishes.
 - [The Archive](docs/archive.md): the spans of element sets the scorecard replays, kept local, and how to pull them.
 - [Design decisions](docs/decisions): why the project is built the way it is.
 - [Changelog](CHANGELOG.md), [Contributing](CONTRIBUTING.md), [Security](SECURITY.md).

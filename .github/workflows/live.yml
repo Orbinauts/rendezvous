@@ -1,0 +1,224 @@
+name: Live
+
+# The live run of the detector frozen at the tag `frozen-beside-v1`
+# (docs/decisions/0006-the-live-run-is-hourly-from-a-frozen-tag.md), every
+# hour on a fresh runner. Main's scripts pull from the catalogue's history
+# class every set published since the last run (the cursor is the last line
+# of `runs.jsonl` on the `live` branch), through the throttled client that
+# writes each request to the ledger `requests.log`, and read them through
+# the frozen detector, checked out beside main at the tag with its runtime
+# dependency at the pinned version, from the states the last run ended with
+# (downloaded from the release `live-data`). Every verdict raised is
+# appended to `verdicts.jsonl` on the `live` branch with a line for the run
+# in `runs.jsonl`, committed and pushed by the Actions bot: the commit time
+# is the proof of when each verdict was known, and this run's log a second,
+# independent timestamp. The states then go back to the release.
+#
+# Then the holds fit to show are published (scripts/live/publish.ts): the
+# whole log, selected against main's ground truth, is written into `v1/` on
+# the orphan branch `published`, committed and pushed; the job `pages`
+# calls the Pages workflow (docs.yml), which deploys it; and an issue is
+# opened for each hold confirmed since (scripts/live/hold-issues.ts).
+#
+# Any failing step fails the run; a failed run opens an issue labelled
+# `maintenance` with the end of its log, one a failing day. Its scheduled
+# runs also enable again any scheduled workflow GitHub disabled for the
+# repository's inactivity. To pause the run: gh workflow disable live.yml;
+# to resume it: gh workflow enable live.yml. A gap in `runs.jsonl` shows
+# when it was not running.
+
+on:
+  schedule:
+    # Every hour at 23 past, off the hour when scheduled runs queue.
+    - cron: "23 * * * *"
+  workflow_dispatch:
+
+# Two runs never overlap: a run started while another is going waits for it rather than cancelling it.
+concurrency:
+  group: live
+  cancel-in-progress: false
+
+permissions:
+  # The pushes to the `live` and `published` branches and the upload to the release `live-data`.
+  contents: write
+  # An issue for each confirmed hold, and one for a failed run, and their labels where missing.
+  issues: write
+  # The scheduled workflows GitHub disabled for the repository's inactivity, enabled again.
+  actions: write
+
+env:
+  FROZEN_TAG: frozen-beside-v1
+  # The commit the tag was made at: a tag moved since is refused, here and by the run itself.
+  FROZEN_COMMIT: b15c0d3ce59b4236e66b65bfc3adb15a690a08d1
+  RENDEZVOUS_FROZEN: ${{ github.workspace }}/frozen
+  RENDEZVOUS_LIVE: ${{ github.workspace }}/live
+  RENDEZVOUS_PUBLISHED: ${{ github.workspace }}/published
+  RENDEZVOUS_ARCHIVE: ${{ github.workspace }}/archive
+
+jobs:
+  hourly:
+    name: read the hour's sets with the frozen detector
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    outputs:
+      # "true" once the published files are committed and pushed: the Pages deploy follows only then.
+      published: ${{ steps.publish.outputs.pushed }}
+    steps:
+      # The steps that do the work write their output here too, so a failed run's issue carries the end of it.
+      - name: Start the log
+        run: |
+          echo "LOG=$RUNNER_TEMP/live-run.log" >> "$GITHUB_ENV"
+          : > "$RUNNER_TEMP/live-run.log"
+      # The token is not left in main's checkout: the dependencies' install scripts run there.
+      - name: Check out main (the scripts and the data)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main
+          persist-credentials: false
+      - name: Check out the frozen tag (the detector)
+        uses: actions/checkout@v4
+        with:
+          ref: refs/tags/${{ env.FROZEN_TAG }}
+          path: frozen
+          persist-credentials: false
+      - name: Check out the live branch (the log)
+        uses: actions/checkout@v4
+        with:
+          ref: live
+          path: live
+          fetch-depth: 0
+      - name: Check out the published branch (the published rendezvous)
+        uses: actions/checkout@v4
+        with:
+          ref: published
+          path: published
+          fetch-depth: 0
+      - name: The tag must still name the frozen commit
+        run: |
+          set -euo pipefail
+          exec > >(tee -a "$LOG") 2>&1
+          git -C main fetch --quiet --no-tags --depth=1 origin "+refs/tags/$FROZEN_TAG:refs/tags/$FROZEN_TAG"
+          tagged=$(git -C main rev-parse "$FROZEN_TAG^{commit}")
+          head=$(git -C frozen rev-parse HEAD)
+          if [ "$tagged" != "$FROZEN_COMMIT" ] || [ "$head" != "$FROZEN_COMMIT" ]; then
+            echo "::error::the tag $FROZEN_TAG names $tagged (checked out at $head), not the frozen commit $FROZEN_COMMIT"
+            exit 1
+          fi
+          echo "$FROZEN_TAG is $FROZEN_COMMIT"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install main's dependencies
+        working-directory: main
+        run: |
+          set -euo pipefail
+          exec > >(tee -a "$LOG") 2>&1
+          npm install --no-audit --no-fund
+      # No lockfile is committed: the frozen detector's one runtime dependency is installed at the version it was scored with, without touching the checkout, and checked by the run.
+      - name: Install the frozen detector's dependency
+        working-directory: frozen
+        run: |
+          set -euo pipefail
+          exec > >(tee -a "$LOG") 2>&1
+          npm install --no-save --no-audit --no-fund --ignore-scripts satellite.js@7.1.0
+          test -z "$(git status --porcelain)"
+      - name: Download the last run's states and the GCAT snapshot
+        working-directory: main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          exec > >(tee -a "$LOG") 2>&1
+          mkdir -p "$RENDEZVOUS_ARCHIVE/live"
+          npm run -s live:data -- download
+      - name: Pull the hour's sets, read them with the frozen detector, log and push the verdicts, keep the states
+        id: run
+        working-directory: main
+        env:
+          SPACETRACK_IDENTITY: ${{ secrets.SPACETRACK_IDENTITY }}
+          SPACETRACK_PASSWORD: ${{ secrets.SPACETRACK_PASSWORD }}
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          exec > >(tee -a "$LOG") 2>&1
+          git -C "$RENDEZVOUS_LIVE" config user.name "github-actions[bot]"
+          git -C "$RENDEZVOUS_LIVE" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          npm run -s live
+          git -C "$RENDEZVOUS_LIVE" log -1 --format='pushed %H at %cI'
+      # The publishing reads the log the run pushed and the states it wrote; it changes nothing the run reads.
+      - name: Publish the holds fit to show, and commit them to the published branch
+        id: publish
+        if: ${{ !cancelled() && steps.run.outcome == 'success' }}
+        working-directory: main
+        run: |
+          set -euo pipefail
+          exec > >(tee -a "$LOG") 2>&1
+          git -C "$RENDEZVOUS_PUBLISHED" config user.name "github-actions[bot]"
+          git -C "$RENDEZVOUS_PUBLISHED" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          npm run -s live:publish
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+      - name: Open an issue for each hold confirmed since
+        if: ${{ !cancelled() && steps.publish.outcome == 'success' }}
+        working-directory: main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          exec > >(tee -a "$LOG") 2>&1
+          npm run -s live:issues
+      # GitHub disables a scheduled workflow after sixty days with no activity in the repository; never one a person disabled (scripts/live/keep-alive.ts).
+      - name: Keep the scheduled workflows enabled
+        if: ${{ !cancelled() && github.event_name == 'schedule' }}
+        working-directory: main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          exec > >(tee -a "$LOG") 2>&1
+          npm run -s live:keep-alive
+      - name: The request ledger and the run's log
+        if: always()
+        run: |
+          echo "requests to the catalogue this run:"
+          cat "$RENDEZVOUS_ARCHIVE/live/requests.log" 2>/dev/null || echo "(none)"
+          echo "the run's log:"
+          cat "$RENDEZVOUS_ARCHIVE/live/live.log" 2>/dev/null || echo "(none)"
+      # A failed run opens an issue labelled `maintenance`, one a failing day: a run failing again that day comments on it (scripts/live/failure-issue.ts).
+      - name: Open an issue with the log
+        if: failure()
+        working-directory: main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          npm run -s live:failure -- --title "The live run failed on $(date -u +%F)" \
+            --intro "The live run $RUN_URL failed. Whatever it had not committed to the live branch is not committed; the next run reads the sets again from the last cursor and logs each verdict once. The end of its log:" \
+            --log "$LOG"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ledger
+          path: |
+            ${{ env.RENDEZVOUS_ARCHIVE }}/live/requests.log
+            ${{ env.RENDEZVOUS_ARCHIVE }}/live/live.log
+          if-no-files-found: warn
+          retention-days: 90
+
+  # A push made with the workflow's token starts no workflow, so the deploy is called here. Its concurrency group
+  # (`pages`) sits on docs.yml's deploy job alone, so neither waits on the other.
+  pages:
+    name: deploy the published files
+    needs: hourly
+    if: ${{ !cancelled() && needs.hourly.outputs.published == 'true' && github.ref == 'refs/heads/main' }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/docs.yml
