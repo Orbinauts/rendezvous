@@ -1,0 +1,100 @@
+{
+ "version": 1,
+ "id": "69506-64873-2026-06-13",
+ "state": "left",
+ "chaser": {
+  "catalogueNumber": 69506,
+  "designator": "2026-132E",
+  "name": "VERTECS",
+  "owner": "KYUT",
+  "ownerState": "J",
+  "launchedOn": "2026-06-12"
+ },
+ "target": {
+  "catalogueNumber": 64873,
+  "designator": "2025-154E",
+  "name": "TRACERS 2",
+  "owner": "NASA",
+  "ownerState": "US",
+  "launchedOn": "2025-07-23"
+ },
+ "regime": "LEO",
+ "besideAt": "2026-06-13T22:59:45.049Z",
+ "confirmedAt": "2026-06-14T03:49:11.157Z",
+ "leftAt": "2026-06-15T19:34:22.847Z",
+ "plane": {
+  "at": "2026-06-12T03:34:47.366Z",
+  "publishedAt": "2026-06-12T23:16:46.000Z",
+  "distanceKm": null,
+  "deltaAKm": -0.24716235450523527,
+  "thetaDeg": 0.00630554935696907
+ },
+ "height": {
+  "at": "2026-06-13T22:59:45.049Z",
+  "publishedAt": "2026-06-14T05:02:57.000Z",
+  "distanceKm": 0.8586356871038339,
+  "deltaAKm": 0.03793853629940713,
+  "thetaDeg": 0.00044381532414521427
+ },
+ "nearestKm": 0.8586356871038339,
+ "nearestAt": "2026-06-13T22:59:45.049Z",
+ "row": null,
+ "reports": [],
+ "verdicts": [
+  {
+   "stage": "beside",
+   "state": "raised",
+   "at": "2026-06-13T22:59:45.049Z",
+   "publishedAt": "2026-06-14T05:02:57.000Z",
+   "distanceKm": 0.8586356871038339,
+   "distanceLaterKm": 5.77343923079994,
+   "deltaAKm": 0.03793853629940713,
+   "thetaDeg": 0.00044381532414521427,
+   "exclusion": null
+  },
+  {
+   "stage": "beside",
+   "state": "confirmed",
+   "at": "2026-06-14T03:49:11.157Z",
+   "publishedAt": "2026-06-14T08:46:35.000Z",
+   "distanceKm": 2.0453800904600956,
+   "distanceLaterKm": 6.668814262363564,
+   "deltaAKm": 0.038566591642847925,
+   "thetaDeg": 0.00038127470153032127,
+   "exclusion": null
+  },
+  {
+   "stage": "left",
+   "state": "raised",
+   "at": "2026-06-15T19:34:22.847Z",
+   "publishedAt": "2026-06-15T21:36:18.000Z",
+   "distanceKm": 10643.20179547268,
+   "distanceLaterKm": 12416.62150610646,
+   "deltaAKm": -22.90334770897971,
+   "thetaDeg": 0.02654595314255603,
+   "exclusion": null
+  },
+  {
+   "stage": "left",
+   "state": "confirmed",
+   "at": "2026-06-15T21:37:38.459Z",
+   "publishedAt": "2026-06-16T03:04:56.000Z",
+   "distanceKm": 10834.297623504968,
+   "distanceLaterKm": 12552.698830385205,
+   "deltaAKm": -22.899113012894304,
+   "thetaDeg": 0.027758521976033526,
+   "exclusion": null
+  },
+  {
+   "stage": "height",
+   "state": "raised",
+   "at": "2026-06-16T02:27:04.179Z",
+   "publishedAt": "2026-06-16T07:27:16.000Z",
+   "distanceKm": 3.598452198025801,
+   "distanceLaterKm": 8.938999965390622,
+   "deltaAKm": -0.030065535299399926,
+   "thetaDeg": 0.0008484633080301351,
+   "exclusion": null
+  }
+ ]
+}

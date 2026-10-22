@@ -1,0 +1,89 @@
+{
+ "version": 1,
+ "id": "62673-66687-2026-07-22",
+ "state": "left",
+ "chaser": {
+  "catalogueNumber": 62673,
+  "designator": "2025-009BS",
+  "name": "LEO Express 2",
+  "owner": "IMPUL",
+  "ownerState": "US",
+  "launchedOn": "2025-01-14"
+ },
+ "target": {
+  "catalogueNumber": 66687,
+  "designator": "2025-276X",
+  "name": "66687",
+  "owner": null,
+  "ownerState": null,
+  "launchedOn": null
+ },
+ "regime": "LEO",
+ "besideAt": "2026-07-22T14:00:03.000Z",
+ "confirmedAt": "2026-07-22T15:03:54.158Z",
+ "leftAt": "2026-08-07T05:02:54.502Z",
+ "plane": {
+  "at": "2026-07-21T06:00:02.999Z",
+  "publishedAt": "2026-07-21T10:26:54.000Z",
+  "distanceKm": null,
+  "deltaAKm": -2.0298432689578476,
+  "thetaDeg": 0.022097700145114266
+ },
+ "height": {
+  "at": "2026-07-21T06:00:02.999Z",
+  "publishedAt": "2026-07-21T10:26:54.000Z",
+  "distanceKm": 172.97523005394834,
+  "deltaAKm": -2.0298432689578476,
+  "thetaDeg": 0.022097700145114266
+ },
+ "nearestKm": 8.314984333669972,
+ "nearestAt": "2026-07-22T15:03:54.158Z",
+ "row": null,
+ "reports": [],
+ "verdicts": [
+  {
+   "stage": "beside",
+   "state": "raised",
+   "at": "2026-07-22T14:00:03.000Z",
+   "publishedAt": "2026-07-22T18:27:12.000Z",
+   "distanceKm": 11.056744412499503,
+   "distanceLaterKm": 69.42016958496367,
+   "deltaAKm": -0.3298038053317214,
+   "thetaDeg": 0.014071402337573426,
+   "exclusion": null
+  },
+  {
+   "stage": "beside",
+   "state": "confirmed",
+   "at": "2026-07-22T15:03:54.158Z",
+   "publishedAt": "2026-07-23T02:45:01.000Z",
+   "distanceKm": 8.314984333669972,
+   "distanceLaterKm": 75.15472646263879,
+   "deltaAKm": -0.30007338185896515,
+   "thetaDeg": 0.014791155417401213,
+   "exclusion": null
+  },
+  {
+   "stage": "left",
+   "state": "raised",
+   "at": "2026-08-07T05:02:54.502Z",
+   "publishedAt": "2026-08-07T12:46:56.000Z",
+   "distanceKm": 202.6060818048277,
+   "distanceLaterKm": 237.1550515415459,
+   "deltaAKm": 0.25147189133804204,
+   "thetaDeg": 0.0006812011619451834,
+   "exclusion": null
+  },
+  {
+   "stage": "left",
+   "state": "confirmed",
+   "at": "2026-08-07T16:05:38.035Z",
+   "publishedAt": "2026-08-07T19:36:54.000Z",
+   "distanceKm": 218.20541477312665,
+   "distanceLaterKm": 253.59885045834798,
+   "deltaAKm": 0.25682164399950125,
+   "thetaDeg": 0.0005080921669637131,
+   "exclusion": null
+  }
+ ]
+}

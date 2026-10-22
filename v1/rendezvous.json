@@ -1,0 +1,462 @@
+{
+ "version": 1,
+ "rendezvous": [
+  {
+   "id": "63986-66746-2026-04-07",
+   "state": "left",
+   "chaser": {
+    "catalogueNumber": 63986,
+    "designator": "2025-100E",
+    "name": "63986",
+    "owner": null,
+    "ownerState": null,
+    "launchedOn": null
+   },
+   "target": {
+    "catalogueNumber": 66746,
+    "designator": "2025-276CJ",
+    "name": "66746",
+    "owner": null,
+    "ownerState": null,
+    "launchedOn": null
+   },
+   "regime": "LEO",
+   "besideAt": "2026-04-07T22:06:18.281Z",
+   "confirmedAt": "2026-04-08T02:50:17.299Z",
+   "leftAt": "2026-04-15T11:31:39.522Z",
+   "plane": {
+    "at": "2026-04-07T22:06:18.281Z",
+    "publishedAt": "2026-04-08T03:22:28.000Z",
+    "distanceKm": null,
+    "deltaAKm": -0.05736536385757063,
+    "thetaDeg": 0.0010933830792357634
+   },
+   "height": {
+    "at": "2026-04-07T22:06:18.281Z",
+    "publishedAt": "2026-04-08T03:22:28.000Z",
+    "distanceKm": 2.0431206021448056,
+    "deltaAKm": -0.05736536385757063,
+    "thetaDeg": 0.0010933830792357634
+   },
+   "nearestKm": 2.0431206021448056,
+   "nearestAt": "2026-04-07T22:06:18.281Z",
+   "row": null,
+   "reports": []
+  },
+  {
+   "id": "47226-40115-2026-05-03",
+   "state": "left",
+   "chaser": {
+    "catalogueNumber": 47226,
+    "designator": "2020-090A",
+    "name": "FalconEye 2",
+    "owner": "UAEAF",
+    "ownerState": "UAE",
+    "launchedOn": "2020-12-02"
+   },
+   "target": {
+    "catalogueNumber": 40115,
+    "designator": "2014-048A",
+    "name": "WorldView-3",
+    "owner": "DGLO",
+    "ownerState": "US",
+    "launchedOn": "2014-08-13"
+   },
+   "regime": "LEO",
+   "besideAt": "2026-05-03T19:55:06.821Z",
+   "confirmedAt": "2026-05-03T21:31:56.254Z",
+   "leftAt": "2026-05-26T03:13:03.717Z",
+   "plane": {
+    "at": "2026-04-10T15:34:28.498Z",
+    "publishedAt": "2026-04-10T16:36:19.000Z",
+    "distanceKm": null,
+    "deltaAKm": 0.11329354443842021,
+    "thetaDeg": 0.08805186020154619
+   },
+   "height": {
+    "at": "2026-04-10T15:34:28.498Z",
+    "publishedAt": "2026-04-10T16:36:19.000Z",
+    "distanceKm": 449.67518362774604,
+    "deltaAKm": 0.11329354443842021,
+    "thetaDeg": 0.08805186020154619
+   },
+   "nearestKm": 96.5086872392545,
+   "nearestAt": "2026-05-03T21:31:56.254Z",
+   "row": null,
+   "reports": []
+  },
+  {
+   "id": "69506-64873-2026-06-12",
+   "state": "left",
+   "chaser": {
+    "catalogueNumber": 69506,
+    "designator": "2026-132E",
+    "name": "VERTECS",
+    "owner": "KYUT",
+    "ownerState": "J",
+    "launchedOn": "2026-06-12"
+   },
+   "target": {
+    "catalogueNumber": 64873,
+    "designator": "2025-154E",
+    "name": "TRACERS 2",
+    "owner": "NASA",
+    "ownerState": "US",
+    "launchedOn": "2025-07-23"
+   },
+   "regime": "LEO",
+   "besideAt": "2026-06-12T03:34:47.366Z",
+   "confirmedAt": "2026-06-12T19:39:35.449Z",
+   "leftAt": "2026-06-13T08:22:23.713Z",
+   "plane": {
+    "at": "2026-06-12T03:34:47.366Z",
+    "publishedAt": "2026-06-12T23:16:46.000Z",
+    "distanceKm": null,
+    "deltaAKm": -0.24716235450523527,
+    "thetaDeg": 0.00630554935696907
+   },
+   "height": {
+    "at": "2026-06-12T03:34:47.366Z",
+    "publishedAt": "2026-06-12T23:16:46.000Z",
+    "distanceKm": 1.2289351253389835,
+    "deltaAKm": -0.24716235450523527,
+    "thetaDeg": 0.00630554935696907
+   },
+   "nearestKm": 0.8586356871038339,
+   "nearestAt": "2026-06-13T22:59:45.049Z",
+   "row": null,
+   "reports": []
+  },
+  {
+   "id": "69506-64873-2026-06-13",
+   "state": "left",
+   "chaser": {
+    "catalogueNumber": 69506,
+    "designator": "2026-132E",
+    "name": "VERTECS",
+    "owner": "KYUT",
+    "ownerState": "J",
+    "launchedOn": "2026-06-12"
+   },
+   "target": {
+    "catalogueNumber": 64873,
+    "designator": "2025-154E",
+    "name": "TRACERS 2",
+    "owner": "NASA",
+    "ownerState": "US",
+    "launchedOn": "2025-07-23"
+   },
+   "regime": "LEO",
+   "besideAt": "2026-06-13T22:59:45.049Z",
+   "confirmedAt": "2026-06-14T03:49:11.157Z",
+   "leftAt": "2026-06-15T19:34:22.847Z",
+   "plane": {
+    "at": "2026-06-12T03:34:47.366Z",
+    "publishedAt": "2026-06-12T23:16:46.000Z",
+    "distanceKm": null,
+    "deltaAKm": -0.24716235450523527,
+    "thetaDeg": 0.00630554935696907
+   },
+   "height": {
+    "at": "2026-06-13T22:59:45.049Z",
+    "publishedAt": "2026-06-14T05:02:57.000Z",
+    "distanceKm": 0.8586356871038339,
+    "deltaAKm": 0.03793853629940713,
+    "thetaDeg": 0.00044381532414521427
+   },
+   "nearestKm": 0.8586356871038339,
+   "nearestAt": "2026-06-13T22:59:45.049Z",
+   "row": null,
+   "reports": []
+  },
+  {
+   "id": "69506-64873-2026-06-16",
+   "state": "left",
+   "chaser": {
+    "catalogueNumber": 69506,
+    "designator": "2026-132E",
+    "name": "VERTECS",
+    "owner": "KYUT",
+    "ownerState": "J",
+    "launchedOn": "2026-06-12"
+   },
+   "target": {
+    "catalogueNumber": 64873,
+    "designator": "2025-154E",
+    "name": "TRACERS 2",
+    "owner": "NASA",
+    "ownerState": "US",
+    "launchedOn": "2025-07-23"
+   },
+   "regime": "LEO",
+   "besideAt": "2026-06-16T02:27:04.179Z",
+   "confirmedAt": "2026-06-16T04:03:33.397Z",
+   "leftAt": "2026-06-16T19:34:24.771Z",
+   "plane": {
+    "at": "2026-06-12T03:34:47.366Z",
+    "publishedAt": "2026-06-12T23:16:46.000Z",
+    "distanceKm": null,
+    "deltaAKm": -0.24716235450523527,
+    "thetaDeg": 0.00630554935696907
+   },
+   "height": {
+    "at": "2026-06-16T02:27:04.179Z",
+    "publishedAt": "2026-06-16T07:27:16.000Z",
+    "distanceKm": 3.598452198025801,
+    "deltaAKm": -0.030065535299399926,
+    "thetaDeg": 0.0008484633080301351
+   },
+   "nearestKm": 3.598452198025801,
+   "nearestAt": "2026-06-16T02:27:04.179Z",
+   "row": null,
+   "reports": []
+  },
+  {
+   "id": "63433-53807-2026-07-05",
+   "state": "left",
+   "chaser": {
+    "catalogueNumber": 63433,
+    "designator": "2025-069A",
+    "name": "Starlink 33682",
+    "owner": "SPXS",
+    "ownerState": "US",
+    "launchedOn": "2025-04-04"
+   },
+   "target": {
+    "catalogueNumber": 53807,
+    "designator": "2022-111AL",
+    "name": "BlueWalker 3",
+    "owner": "ASTS",
+    "ownerState": "US",
+    "launchedOn": "2022-09-11"
+   },
+   "regime": "LEO",
+   "besideAt": "2026-07-05T14:00:03.000Z",
+   "confirmedAt": "2026-07-06T06:00:04.000Z",
+   "leftAt": "2026-07-06T14:00:03.000Z",
+   "plane": {
+    "at": "2026-07-04T14:00:01.999Z",
+    "publishedAt": "2026-07-04T21:49:02.000Z",
+    "distanceKm": null,
+    "deltaAKm": -14.116827039084455,
+    "thetaDeg": 0.09458902595252398
+   },
+   "height": {
+    "at": "2026-07-05T14:00:03.000Z",
+    "publishedAt": "2026-07-05T21:02:50.000Z",
+    "distanceKm": 76.34670689568435,
+    "deltaAKm": -2.491542593351369,
+    "thetaDeg": 0.0810681316966355
+   },
+   "nearestKm": 76.34670689568435,
+   "nearestAt": "2026-07-05T14:00:03.000Z",
+   "row": null,
+   "reports": []
+  },
+  {
+   "id": "62673-66687-2026-07-22",
+   "state": "left",
+   "chaser": {
+    "catalogueNumber": 62673,
+    "designator": "2025-009BS",
+    "name": "LEO Express 2",
+    "owner": "IMPUL",
+    "ownerState": "US",
+    "launchedOn": "2025-01-14"
+   },
+   "target": {
+    "catalogueNumber": 66687,
+    "designator": "2025-276X",
+    "name": "66687",
+    "owner": null,
+    "ownerState": null,
+    "launchedOn": null
+   },
+   "regime": "LEO",
+   "besideAt": "2026-07-22T14:00:03.000Z",
+   "confirmedAt": "2026-07-22T15:03:54.158Z",
+   "leftAt": "2026-08-07T05:02:54.502Z",
+   "plane": {
+    "at": "2026-07-21T06:00:02.999Z",
+    "publishedAt": "2026-07-21T10:26:54.000Z",
+    "distanceKm": null,
+    "deltaAKm": -2.0298432689578476,
+    "thetaDeg": 0.022097700145114266
+   },
+   "height": {
+    "at": "2026-07-21T06:00:02.999Z",
+    "publishedAt": "2026-07-21T10:26:54.000Z",
+    "distanceKm": 172.97523005394834,
+    "deltaAKm": -2.0298432689578476,
+    "thetaDeg": 0.022097700145114266
+   },
+   "nearestKm": 8.314984333669972,
+   "nearestAt": "2026-07-22T15:03:54.158Z",
+   "row": null,
+   "reports": []
+  },
+  {
+   "id": "62673-66697-2026-09-25",
+   "state": "left",
+   "chaser": {
+    "catalogueNumber": 62673,
+    "designator": "2025-009BS",
+    "name": "LEO Express 2",
+    "owner": "IMPUL",
+    "ownerState": "US",
+    "launchedOn": "2025-01-14"
+   },
+   "target": {
+    "catalogueNumber": 66697,
+    "designator": "2025-276AH",
+    "name": "IRIDE-MS1-Eaglet-2-3",
+    "owner": "ASI",
+    "ownerState": "I",
+    "launchedOn": "2025-11-28"
+   },
+   "regime": "LEO",
+   "besideAt": "2026-09-25T17:07:06.920Z",
+   "confirmedAt": "2026-09-26T04:09:40.675Z",
+   "leftAt": "2026-09-28T03:29:44.847Z",
+   "plane": {
+    "at": "2026-07-18T18:07:24.755Z",
+    "publishedAt": "2026-07-19T00:26:31.000Z",
+    "distanceKm": null,
+    "deltaAKm": -16.0747985190701,
+    "thetaDeg": 0.09147712140915308
+   },
+   "height": {
+    "at": "2026-07-21T06:00:02.999Z",
+    "publishedAt": "2026-07-21T10:26:54.000Z",
+    "distanceKm": 10037.091052968164,
+    "deltaAKm": -3.7682216519178837,
+    "thetaDeg": 0.020237537165783605
+   },
+   "nearestKm": 34.369147132356446,
+   "nearestAt": "2026-09-26T04:09:40.675Z",
+   "row": null,
+   "reports": []
+  },
+  {
+   "id": "68695-67000-2026-09-30",
+   "state": "left",
+   "chaser": {
+    "catalogueNumber": 68695,
+    "designator": "2026-080E",
+    "name": "68695",
+    "owner": null,
+    "ownerState": null,
+    "launchedOn": null
+   },
+   "target": {
+    "catalogueNumber": 67000,
+    "designator": "2025-292H",
+    "name": "67000",
+    "owner": null,
+    "ownerState": null,
+    "launchedOn": null
+   },
+   "regime": "LEO",
+   "besideAt": "2026-09-30T11:53:50.670Z",
+   "confirmedAt": "2026-09-30T13:29:11.394Z",
+   "leftAt": "2026-10-03T14:43:28.211Z",
+   "plane": {
+    "at": "2026-09-19T03:37:53.241Z",
+    "publishedAt": "2026-09-19T08:26:38.000Z",
+    "distanceKm": null,
+    "deltaAKm": 0.6276514668661548,
+    "thetaDeg": 0.06154821844674217
+   },
+   "height": {
+    "at": "2026-09-19T03:37:53.241Z",
+    "publishedAt": "2026-09-19T08:26:38.000Z",
+    "distanceKm": 1183.0105326292573,
+    "deltaAKm": 0.6276514668661548,
+    "thetaDeg": 0.06154821844674217
+   },
+   "nearestKm": 77.52642521743448,
+   "nearestAt": "2026-09-30T13:29:11.394Z",
+   "row": null,
+   "reports": []
+  },
+  {
+   "id": "68762-59103-2026-10-16",
+   "state": "left",
+   "chaser": {
+    "catalogueNumber": 68762,
+    "designator": "2026-083H",
+    "name": "Kosmos-2612?",
+    "owner": "VVKOV",
+    "ownerState": "RU",
+    "launchedOn": "2026-04-16"
+   },
+   "target": {
+    "catalogueNumber": 59103,
+    "designator": "2024-043F",
+    "name": "ICEYE-X36",
+    "owner": "ICEUS",
+    "ownerState": "US",
+    "launchedOn": "2024-03-04"
+   },
+   "regime": "LEO",
+   "besideAt": "2026-10-16T14:14:11.505Z",
+   "confirmedAt": "2026-10-16T15:49:44.836Z",
+   "leftAt": "2026-10-19T04:21:05.819Z",
+   "plane": {
+    "at": "2026-10-07T14:07:43.705Z",
+    "publishedAt": "2026-10-07T17:41:50.000Z",
+    "distanceKm": null,
+    "deltaAKm": 47.533481686702544,
+    "thetaDeg": 0.09254003118305786
+   },
+   "height": {
+    "at": "2026-10-12T22:39:15.602Z",
+    "publishedAt": "2026-10-13T03:55:05.000Z",
+    "distanceKm": 484.32894181210855,
+    "deltaAKm": -0.20769319853661727,
+    "thetaDeg": 0.0021533571137400723
+   },
+   "nearestKm": 2.486827161674659,
+   "nearestAt": "2026-10-16T15:49:44.836Z",
+   "row": "68762-59103:2026-09-30",
+   "reports": [
+    {
+     "source": "institute",
+     "ref": "Clayton Swope and Chantal Li, \"Could Russia Be Poised to Use an On-Orbit Weapon Against a Commercial Satellite?\", CSIS, 15 October 2026",
+     "url": "https://www.csis.org/analysis/could-russia-be-poised-use-orbit-weapon-against-commercial-satellite",
+     "statedOn": "2026-10-15"
+    },
+    {
+     "source": "analyst",
+     "ref": "Marco Langbroek, \"KOSMOS 2612 and ICEYE-X36: a worrisome cat-and-mouse-game in Space\", SatTrackCam Leiden, 17 October 2026, updated to 21 October",
+     "url": "https://sattrackcam.blogspot.com/2026/10/kosmos-2612-and-iceye-x36-worrisome-cat.html",
+     "statedOn": "2026-10-17"
+    },
+    {
+     "source": "analyst",
+     "ref": "Jonathan McDowell on X, 17 October 2026",
+     "url": "https://x.com/planet4589/status/2111501770870698398",
+     "statedOn": "2026-10-17"
+    },
+    {
+     "source": "tracker",
+     "ref": "LeoLabs, statement to Axios, \"Russia nears U.S. satellite, raising alarm about intent\", 17 October 2026",
+     "url": "https://www.axios.com/2026/10/17/russia-ukraine-satellite-space",
+     "statedOn": "2026-10-17"
+    },
+    {
+     "source": "analyst",
+     "ref": "Orbinauts, \"The Russian satellite that flew 5 km behind an ICEYE radar satellite has manoeuvred away from it\", 19 October 2026, from Space-Track's element sets run through SGP4",
+     "url": "https://orbinauts.com/news/the-russian-satellite-behind-an-iceye-radar-satellite-is-drifting-away/",
+     "statedOn": "2026-10-19"
+    },
+    {
+     "source": "tracker",
+     "ref": "LeoLabs event report, as reported by Rachel Jewett, \"Russian Satellite Maneuvered Within Extreme Proximity of ICEYE Satellite, LeoLabs Reports\", Via Satellite, 19 October 2026",
+     "url": "https://www.satellitetoday.com/government-military/2026/10/19/russian-satellite-maneuvered-within-extreme-proximity-of-iceye-satellite-leolabs-reports/",
+     "statedOn": "2026-10-19"
+    }
+   ]
+  }
+ ]
+}

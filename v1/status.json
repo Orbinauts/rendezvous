@@ -1,0 +1,8 @@
+{
+ "version": 1,
+ "ranAt": "2026-10-22T14:52:49.001Z",
+ "setsThrough": "2026-10-22T00:00:00.000Z",
+ "detector": "beside-v1",
+ "truthSha256": "4e46899fcaf48566b5633aea06b77eb1c9b46ec28283d65716d431d32ed46a0c",
+ "exclusionsSha256": "adb12ba2ae91ccf8c6171c194d28711f1c65cd488c49df533951e071d1af0e1e"
+}

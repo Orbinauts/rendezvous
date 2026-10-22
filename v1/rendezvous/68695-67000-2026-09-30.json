@@ -1,0 +1,89 @@
+{
+ "version": 1,
+ "id": "68695-67000-2026-09-30",
+ "state": "left",
+ "chaser": {
+  "catalogueNumber": 68695,
+  "designator": "2026-080E",
+  "name": "68695",
+  "owner": null,
+  "ownerState": null,
+  "launchedOn": null
+ },
+ "target": {
+  "catalogueNumber": 67000,
+  "designator": "2025-292H",
+  "name": "67000",
+  "owner": null,
+  "ownerState": null,
+  "launchedOn": null
+ },
+ "regime": "LEO",
+ "besideAt": "2026-09-30T11:53:50.670Z",
+ "confirmedAt": "2026-09-30T13:29:11.394Z",
+ "leftAt": "2026-10-03T14:43:28.211Z",
+ "plane": {
+  "at": "2026-09-19T03:37:53.241Z",
+  "publishedAt": "2026-09-19T08:26:38.000Z",
+  "distanceKm": null,
+  "deltaAKm": 0.6276514668661548,
+  "thetaDeg": 0.06154821844674217
+ },
+ "height": {
+  "at": "2026-09-19T03:37:53.241Z",
+  "publishedAt": "2026-09-19T08:26:38.000Z",
+  "distanceKm": 1183.0105326292573,
+  "deltaAKm": 0.6276514668661548,
+  "thetaDeg": 0.06154821844674217
+ },
+ "nearestKm": 77.52642521743448,
+ "nearestAt": "2026-09-30T13:29:11.394Z",
+ "row": null,
+ "reports": [],
+ "verdicts": [
+  {
+   "stage": "beside",
+   "state": "raised",
+   "at": "2026-09-30T11:53:50.670Z",
+   "publishedAt": "2026-09-30T18:23:42.000Z",
+   "distanceKm": 83.85930260965479,
+   "distanceLaterKm": 19.363631955552826,
+   "deltaAKm": 0.7010252143309117,
+   "thetaDeg": 0.032820178625710045,
+   "exclusion": null
+  },
+  {
+   "stage": "beside",
+   "state": "confirmed",
+   "at": "2026-09-30T13:29:11.394Z",
+   "publishedAt": "2026-09-30T18:23:42.000Z",
+   "distanceKm": 77.52642521743448,
+   "distanceLaterKm": 25.616380137745985,
+   "deltaAKm": 0.6942848297649107,
+   "thetaDeg": 0.0330519162075658,
+   "exclusion": null
+  },
+  {
+   "stage": "left",
+   "state": "raised",
+   "at": "2026-10-03T14:43:28.211Z",
+   "publishedAt": "2026-10-03T17:44:47.000Z",
+   "distanceKm": 227.76492446002217,
+   "distanceLaterKm": 329.97453222106043,
+   "deltaAKm": 0.6955617100311429,
+   "thetaDeg": 0.02862989761894754,
+   "exclusion": null
+  },
+  {
+   "stage": "left",
+   "state": "confirmed",
+   "at": "2026-10-03T22:40:32.086Z",
+   "publishedAt": "2026-10-04T02:26:59.000Z",
+   "distanceKm": 260.18977905809476,
+   "distanceLaterKm": 362.2960998679218,
+   "deltaAKm": 0.7100691283485503,
+   "thetaDeg": 0.027689542293625177,
+   "exclusion": null
+  }
+ ]
+}

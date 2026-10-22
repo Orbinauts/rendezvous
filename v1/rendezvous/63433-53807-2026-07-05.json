@@ -1,0 +1,89 @@
+{
+ "version": 1,
+ "id": "63433-53807-2026-07-05",
+ "state": "left",
+ "chaser": {
+  "catalogueNumber": 63433,
+  "designator": "2025-069A",
+  "name": "Starlink 33682",
+  "owner": "SPXS",
+  "ownerState": "US",
+  "launchedOn": "2025-04-04"
+ },
+ "target": {
+  "catalogueNumber": 53807,
+  "designator": "2022-111AL",
+  "name": "BlueWalker 3",
+  "owner": "ASTS",
+  "ownerState": "US",
+  "launchedOn": "2022-09-11"
+ },
+ "regime": "LEO",
+ "besideAt": "2026-07-05T14:00:03.000Z",
+ "confirmedAt": "2026-07-06T06:00:04.000Z",
+ "leftAt": "2026-07-06T14:00:03.000Z",
+ "plane": {
+  "at": "2026-07-04T14:00:01.999Z",
+  "publishedAt": "2026-07-04T21:49:02.000Z",
+  "distanceKm": null,
+  "deltaAKm": -14.116827039084455,
+  "thetaDeg": 0.09458902595252398
+ },
+ "height": {
+  "at": "2026-07-05T14:00:03.000Z",
+  "publishedAt": "2026-07-05T21:02:50.000Z",
+  "distanceKm": 76.34670689568435,
+  "deltaAKm": -2.491542593351369,
+  "thetaDeg": 0.0810681316966355
+ },
+ "nearestKm": 76.34670689568435,
+ "nearestAt": "2026-07-05T14:00:03.000Z",
+ "row": null,
+ "reports": [],
+ "verdicts": [
+  {
+   "stage": "beside",
+   "state": "raised",
+   "at": "2026-07-05T14:00:03.000Z",
+   "publishedAt": "2026-07-05T21:02:50.000Z",
+   "distanceKm": 76.34670689568435,
+   "distanceLaterKm": 30.128691818090456,
+   "deltaAKm": -2.491542593351369,
+   "thetaDeg": 0.0810681316966355,
+   "exclusion": null
+  },
+  {
+   "stage": "beside",
+   "state": "confirmed",
+   "at": "2026-07-06T06:00:04.000Z",
+   "publishedAt": "2026-07-06T11:14:40.000Z",
+   "distanceKm": 82.88254012514571,
+   "distanceLaterKm": 1180.3155518485485,
+   "deltaAKm": 2.4244236798031125,
+   "thetaDeg": 0.07796457215512484,
+   "exclusion": null
+  },
+  {
+   "stage": "left",
+   "state": "raised",
+   "at": "2026-07-06T14:00:03.000Z",
+   "publishedAt": "2026-07-06T18:59:06.000Z",
+   "distanceKm": 132.7532091941652,
+   "distanceLaterKm": 1643.8195553663736,
+   "deltaAKm": 7.445404191947091,
+   "thetaDeg": 0.07868523056132581,
+   "exclusion": null
+  },
+  {
+   "stage": "left",
+   "state": "confirmed",
+   "at": "2026-07-06T20:00:01.999Z",
+   "publishedAt": "2026-07-07T00:06:49.000Z",
+   "distanceKm": 422.76813539237577,
+   "distanceLaterKm": 1788.3134601483157,
+   "deltaAKm": 9.462914680139875,
+   "thetaDeg": 0.07952832567880169,
+   "exclusion": null
+  }
+ ]
+}

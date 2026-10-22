@@ -1,0 +1,126 @@
+{
+ "version": 1,
+ "id": "68762-59103-2026-10-16",
+ "state": "left",
+ "chaser": {
+  "catalogueNumber": 68762,
+  "designator": "2026-083H",
+  "name": "Kosmos-2612?",
+  "owner": "VVKOV",
+  "ownerState": "RU",
+  "launchedOn": "2026-04-16"
+ },
+ "target": {
+  "catalogueNumber": 59103,
+  "designator": "2024-043F",
+  "name": "ICEYE-X36",
+  "owner": "ICEUS",
+  "ownerState": "US",
+  "launchedOn": "2024-03-04"
+ },
+ "regime": "LEO",
+ "besideAt": "2026-10-16T14:14:11.505Z",
+ "confirmedAt": "2026-10-16T15:49:44.836Z",
+ "leftAt": "2026-10-19T04:21:05.819Z",
+ "plane": {
+  "at": "2026-10-07T14:07:43.705Z",
+  "publishedAt": "2026-10-07T17:41:50.000Z",
+  "distanceKm": null,
+  "deltaAKm": 47.533481686702544,
+  "thetaDeg": 0.09254003118305786
+ },
+ "height": {
+  "at": "2026-10-12T22:39:15.602Z",
+  "publishedAt": "2026-10-13T03:55:05.000Z",
+  "distanceKm": 484.32894181210855,
+  "deltaAKm": -0.20769319853661727,
+  "thetaDeg": 0.0021533571137400723
+ },
+ "nearestKm": 2.486827161674659,
+ "nearestAt": "2026-10-16T15:49:44.836Z",
+ "row": "68762-59103:2026-09-30",
+ "reports": [
+  {
+   "source": "institute",
+   "ref": "Clayton Swope and Chantal Li, \"Could Russia Be Poised to Use an On-Orbit Weapon Against a Commercial Satellite?\", CSIS, 15 October 2026",
+   "url": "https://www.csis.org/analysis/could-russia-be-poised-use-orbit-weapon-against-commercial-satellite",
+   "statedOn": "2026-10-15"
+  },
+  {
+   "source": "analyst",
+   "ref": "Marco Langbroek, \"KOSMOS 2612 and ICEYE-X36: a worrisome cat-and-mouse-game in Space\", SatTrackCam Leiden, 17 October 2026, updated to 21 October",
+   "url": "https://sattrackcam.blogspot.com/2026/10/kosmos-2612-and-iceye-x36-worrisome-cat.html",
+   "statedOn": "2026-10-17"
+  },
+  {
+   "source": "analyst",
+   "ref": "Jonathan McDowell on X, 17 October 2026",
+   "url": "https://x.com/planet4589/status/2111501770870698398",
+   "statedOn": "2026-10-17"
+  },
+  {
+   "source": "tracker",
+   "ref": "LeoLabs, statement to Axios, \"Russia nears U.S. satellite, raising alarm about intent\", 17 October 2026",
+   "url": "https://www.axios.com/2026/10/17/russia-ukraine-satellite-space",
+   "statedOn": "2026-10-17"
+  },
+  {
+   "source": "analyst",
+   "ref": "Orbinauts, \"The Russian satellite that flew 5 km behind an ICEYE radar satellite has manoeuvred away from it\", 19 October 2026, from Space-Track's element sets run through SGP4",
+   "url": "https://orbinauts.com/news/the-russian-satellite-behind-an-iceye-radar-satellite-is-drifting-away/",
+   "statedOn": "2026-10-19"
+  },
+  {
+   "source": "tracker",
+   "ref": "LeoLabs event report, as reported by Rachel Jewett, \"Russian Satellite Maneuvered Within Extreme Proximity of ICEYE Satellite, LeoLabs Reports\", Via Satellite, 19 October 2026",
+   "url": "https://www.satellitetoday.com/government-military/2026/10/19/russian-satellite-maneuvered-within-extreme-proximity-of-iceye-satellite-leolabs-reports/",
+   "statedOn": "2026-10-19"
+  }
+ ],
+ "verdicts": [
+  {
+   "stage": "beside",
+   "state": "raised",
+   "at": "2026-10-16T14:14:11.505Z",
+   "publishedAt": "2026-10-16T18:00:49.000Z",
+   "distanceKm": 3.3880635994600143,
+   "distanceLaterKm": 7.933235316042176,
+   "deltaAKm": -0.0976824098115685,
+   "thetaDeg": 0.0032356070299432867,
+   "exclusion": null
+  },
+  {
+   "stage": "beside",
+   "state": "confirmed",
+   "at": "2026-10-16T15:49:44.836Z",
+   "publishedAt": "2026-10-16T18:00:49.000Z",
+   "distanceKm": 2.486827161674659,
+   "distanceLaterKm": 8.878411708520623,
+   "deltaAKm": -0.09015460325463209,
+   "thetaDeg": 0.003780257595568351,
+   "exclusion": null
+  },
+  {
+   "stage": "left",
+   "state": "raised",
+   "at": "2026-10-19T04:21:05.819Z",
+   "publishedAt": "2026-10-19T07:06:45.000Z",
+   "distanceKm": 243.97491330119922,
+   "distanceLaterKm": 598.0294910885389,
+   "deltaAKm": 2.5034001540252575,
+   "thetaDeg": 0.001257096096422395,
+   "exclusion": null
+  },
+  {
+   "stage": "left",
+   "state": "confirmed",
+   "at": "2026-10-19T07:32:13.168Z",
+   "publishedAt": "2026-10-19T10:07:17.000Z",
+   "distanceKm": 291.08774000167017,
+   "distanceLaterKm": 645.3697900369426,
+   "deltaAKm": 2.5065274871112706,
+   "thetaDeg": 0.001148207797251985,
+   "exclusion": null
+  }
+ ]
+}

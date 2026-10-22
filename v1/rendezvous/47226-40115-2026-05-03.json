@@ -1,0 +1,89 @@
+{
+ "version": 1,
+ "id": "47226-40115-2026-05-03",
+ "state": "left",
+ "chaser": {
+  "catalogueNumber": 47226,
+  "designator": "2020-090A",
+  "name": "FalconEye 2",
+  "owner": "UAEAF",
+  "ownerState": "UAE",
+  "launchedOn": "2020-12-02"
+ },
+ "target": {
+  "catalogueNumber": 40115,
+  "designator": "2014-048A",
+  "name": "WorldView-3",
+  "owner": "DGLO",
+  "ownerState": "US",
+  "launchedOn": "2014-08-13"
+ },
+ "regime": "LEO",
+ "besideAt": "2026-05-03T19:55:06.821Z",
+ "confirmedAt": "2026-05-03T21:31:56.254Z",
+ "leftAt": "2026-05-26T03:13:03.717Z",
+ "plane": {
+  "at": "2026-04-10T15:34:28.498Z",
+  "publishedAt": "2026-04-10T16:36:19.000Z",
+  "distanceKm": null,
+  "deltaAKm": 0.11329354443842021,
+  "thetaDeg": 0.08805186020154619
+ },
+ "height": {
+  "at": "2026-04-10T15:34:28.498Z",
+  "publishedAt": "2026-04-10T16:36:19.000Z",
+  "distanceKm": 449.67518362774604,
+  "deltaAKm": 0.11329354443842021,
+  "thetaDeg": 0.08805186020154619
+ },
+ "nearestKm": 96.5086872392545,
+ "nearestAt": "2026-05-03T21:31:56.254Z",
+ "row": null,
+ "reports": [],
+ "verdicts": [
+  {
+   "stage": "beside",
+   "state": "raised",
+   "at": "2026-05-03T19:55:06.821Z",
+   "publishedAt": "2026-05-03T22:46:21.000Z",
+   "distanceKm": 97.76453115393889,
+   "distanceLaterKm": 83.18256258179007,
+   "deltaAKm": 0.09891806651648949,
+   "thetaDeg": 0.08429305988470023,
+   "exclusion": null
+  },
+  {
+   "stage": "beside",
+   "state": "confirmed",
+   "at": "2026-05-03T21:31:56.254Z",
+   "publishedAt": "2026-05-03T22:46:21.000Z",
+   "distanceKm": 96.5086872392545,
+   "distanceLaterKm": 81.38463776204834,
+   "deltaAKm": 0.09968401086734957,
+   "thetaDeg": 0.08501099211125623,
+   "exclusion": null
+  },
+  {
+   "stage": "left",
+   "state": "raised",
+   "at": "2026-05-26T03:13:03.717Z",
+   "publishedAt": "2026-05-26T04:36:16.000Z",
+   "distanceKm": 235.19265518959452,
+   "distanceLaterKm": 274.0510377661259,
+   "deltaAKm": 0.28770129625991103,
+   "thetaDeg": 0.08156052902587241,
+   "exclusion": null
+  },
+  {
+   "stage": "left",
+   "state": "confirmed",
+   "at": "2026-05-26T08:04:10.277Z",
+   "publishedAt": "2026-05-26T10:16:23.000Z",
+   "distanceKm": 243.25289655698896,
+   "distanceLaterKm": 281.6269033111743,
+   "deltaAKm": 0.28406921725309076,
+   "thetaDeg": 0.08180529719169251,
+   "exclusion": null
+  }
+ ]
+}
