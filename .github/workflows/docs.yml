@@ -30,6 +30,10 @@ jobs:
           if [ -d published/v1 ]; then cp -r published/v1 site/v1; fi
           cp docs/published.md site/index.md
           printf '<!doctype html><meta charset="utf-8"><title>Orbinauts rendezvous</title><p>The published rendezvous: <a href="v1/rendezvous.json">v1/rendezvous.json</a>, <a href="v1/status.json">v1/status.json</a>. See <a href="https://github.com/Orbinauts/rendezvous/blob/main/docs/published.md">docs/published.md</a>.' > site/index.html
+      # Creates the Pages site on the first run, with the workflow's token, where the repository has none yet.
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
